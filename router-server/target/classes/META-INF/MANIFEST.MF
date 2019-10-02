@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: router-server
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: Chen
+Implementation-Vendor-Id: com.frame
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/router-server
+Created-By: Maven Integration for Eclipse
+
