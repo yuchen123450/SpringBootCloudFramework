@@ -24,6 +24,11 @@ class InternalFallbackProvider implements FallbackProvider {
         return "*";
     }
 
+    /**
+     *@author: 	Chen
+     *@date:  	Oct 3, 2019
+     *@location:
+     */
     @Override
     public ClientHttpResponse fallbackResponse(String route, final Throwable cause) {
         if (cause instanceof HystrixTimeoutException) {

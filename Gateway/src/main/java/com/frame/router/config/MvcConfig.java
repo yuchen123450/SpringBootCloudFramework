@@ -17,21 +17,10 @@ import java.io.File;
 import java.util.List;
 
 /**
- * 配置类，增加自定义拦截器和解析器
  * 
- * @see com.scienjus.authorization.resolvers.CurrentUserMethodArgumentResolver
- * @see com.pdstars.manager.interceptor.scienjus.authorization.interceptor.AuthorizationInterceptor
- * @author ScienJus
- * @date 2015/7/30.
  */
 @SpringBootConfiguration
 public class MvcConfig extends WebMvcConfigurerAdapter {
-
-//	@Autowired
-//	private AuthorizationInterceptor authorizationInterceptor;
-
-//	@Autowired
-//	private CurrentUserMethodArgumentResolver currentUserMethodArgumentResolver;
 
 //	@Value("${file.uploadpath}")
 //	String uploadPath;
@@ -53,14 +42,8 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-//		registry.addInterceptor(authorizationInterceptor);
 		System.out.println("interceptor");
 	}
-//
-//	@Override
-//	public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
-//		argumentResolvers.add(currentUserMethodArgumentResolver);
-//	}
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {

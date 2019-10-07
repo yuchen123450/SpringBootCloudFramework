@@ -8,12 +8,12 @@
 		<version>2.1.3.RELEASE</version>
 		<relativePath/> 
 	</parent>
-				<packaging>jar</packaging>
+	<packaging>jar</packaging>
 	
 	<groupId>com.frame</groupId>
-	<artifactId>eureka-server</artifactId>
+	<artifactId>Eureka-Server</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>eureka-server</name>
+	<name>Eureka-Server</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
