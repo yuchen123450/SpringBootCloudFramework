@@ -23,7 +23,7 @@ import com.frame.mq.util.RabbitUtil;
  */
 
 @RestController
-@RequestMapping(value = "/conumer")
+@RequestMapping(value = "/consumer")
 public class ConsumerController {
 	
 	@Autowired

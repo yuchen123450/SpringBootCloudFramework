@@ -44,7 +44,7 @@ public class RabbitMQConfig {
 
 	// multiple host, high availablity
 	// seperate by ","
-	connectionFactory.setAddresses("127.0.0.1:15672,localhost:15672,localhost:5672");
+	connectionFactory.setAddresses("localhost:5672,localhost:15672");
 	return connectionFactory;
 	}
 }

@@ -16,7 +16,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.example")
+@ComponentScan(basePackages = "com.frame")
 public class MQApplication {
 	public static Logger logger = LoggerFactory.getLogger(MQApplication.class);
 

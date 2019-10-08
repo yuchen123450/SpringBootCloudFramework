@@ -88,7 +88,7 @@ public class RabbitUtil {
 	/******************************* Producer **************************************/
     public int sendTo(String queueName,String message){
         logger.info("Sending> ...");
-        this.rabbitTemplate.convertAndSend(queueName,message);
+        rabbitTemplate.convertAndSend(queueName,message);
         return 1;
     }
 	
