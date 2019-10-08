@@ -1,0 +1,16 @@
+{
+	"liveServer.settings.root": "/dist",
+	"liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --headless --remote-debugging-port=9222",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.port": 5000,
+	"liveServer.settings.donotVerifyTags": true,
+	"search.location": "sidebar",
+	"liveServer.settings.CustomBrowser": "chrome",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"svn.delete.ignoredRulesForDeletedFiles": [
+		"svg_convert/test",
+		"src/styles/main.less"
+	],
+	"editor.renderWhitespace": "all",
+	"workbench.tree.indent": 16
+}

@@ -1,0 +1,297 @@
+@import '../style.less';
+
+@import "../../../components/ellipsis/index.less";
+@import "../../../components/loading/index.less";
+@import "../../../components/standardForm/index.less";
+@import "../../../components/standardTable/index.less";
+@import '../../../components/statistical/index.less';
+@import "../../../containers/dataChart/index.less";
+@import "../../../components/autoScrollList/index.less";
+@import "../../../components/svg/index.less";
+
+@import './main/index.less';
+@import './substation/dataStatistics/index.less';
+@import './caseShare/index.less';
+@import './diagnosis/index.less';
+@import './detectionTask/dataDetail/index.less';
+@import './substation/wiringDiagram/index.less';
+
+.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0.5rem;
+    background: fadein(@statistical-background-color, 20) url(../../../assets/images/dashboard_bg01.png) no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    &:before {
+        content: '';
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+
+    >.header {
+        transition: background 0.3s, width 0.2s;
+        height: inherit;
+        line-height: inherit;
+        padding: 0;
+        background: transparent;
+
+        .top {
+            height: 3rem;
+            width: 100%;
+            display: flex;
+
+            .system {
+                display: inline-flex;
+                align-items: center;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: @statistical-border-width*2;
+                    background: linear-gradient(90deg, transparent, @statistical-border-color);
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    width: @statistical-border-width*4;
+                    background: @statistical-border-color;
+                    transform: skew(-45deg);
+                    transform-origin: bottom;
+                }
+
+                .logo {
+                    width: 2rem;
+                    background-position: center;
+                    background-size: contain;
+                    margin-bottom: 1rem;
+                }
+
+                .name {
+                    font-size: @statistical-font*1.5;
+                    background-image: -webkit-gradient(linear, 0 top, 0 bottom, from(@statistical-color), to(@statistical-primary-color));
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    padding: 0 0.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .menu-1 {
+                position: relative;
+                display: inline-flex;
+                flex: 1;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 2.9rem;
+                    width: 100%;
+                    height: @statistical-border-width*2;
+                    background: linear-gradient(90deg, @statistical-border-color, transparent);
+                }
+
+                &-btn {
+                    position: absolute;
+                    bottom: 0;
+                    left: 1.5rem;
+
+                    .selected {
+                        color: @statistical-primary-color;
+                        background: @statistical-btn-focus-color;
+                        border-top: @statistical-border-width*2 @statistical-border-color solid;
+                        border-bottom: @statistical-border-width*2 @statistical-border-color solid;
+                        border-right: @statistical-border-width*4 @statistical-border-color solid;
+                        border-left: @statistical-border-width*4 @statistical-border-color solid;
+                    }
+                }
+
+                button {
+                    margin-left: 0.5rem;
+                    border: @statistical-border-width transparent solid;
+                    border-radius: 0;
+                    color: @statistical-color;
+                    transform: skewX(-45deg);
+                    background: @statistical-btn-background-color;
+                    font-size: @statistical-font*1.2;
+                    height: 2.2rem;
+                    padding: 0 1rem;
+
+                    &:hover {
+                        background: @statistical-btn-focus-color;
+                    }
+
+                    span {
+                        transform: skewX(45deg);
+                    }
+                }
+            }
+
+            .tool {
+                display: inline-flex;
+                align-items: center;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: @statistical-border-width*2;
+                    background: linear-gradient(90deg, transparent, @statistical-border-color, transparent);
+                }
+
+                >div {
+                    display: flex;
+                    margin-left: 0.5rem;
+                }
+
+                a {
+                    font-size: @statistical-font*1.5;
+                    color: @statistical-primary-color;
+                    margin-left: 0.5rem;
+                }
+            }
+        }
+
+        .bottom {
+            height: 3rem;
+            width: 100%;
+            display: flex;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: @statistical-border-width*3;
+                background: linear-gradient(90deg, transparent, @statistical-border-color, transparent);
+            }
+
+            .menu-2 {
+                position: relative;
+                display: inline-flex;
+                flex: 1;
+                align-items: center;
+
+                &-btn {
+                    .selected {
+                        color: @statistical-primary-color;
+                        background: @statistical-btn-focus-color;
+                    }
+                }
+
+                button {
+                    margin-right: 0.5rem;
+                    border: @statistical-border-width transparent solid;
+                    border-radius: 0;
+                    color: @statistical-color;
+                    background: @statistical-btn-background-color;
+                    font-size: 1.2rem;
+                    height: 2.2rem;
+                    padding: 0 1rem;
+
+                    &:hover {
+                        background: @statistical-btn-focus-color;
+                    }
+                }
+            }
+
+            .select {
+                height: 2.1rem;
+                display: flex;
+                align-items: center;
+
+                .ant-select {
+                    max-width: 20rem;
+
+                    &-selection {
+                        border-radius: 0;
+                        border: @statistical-border-width transparent solid;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    >.content {
+        overflow: hidden;
+        background: transparent;
+        position: absolute;
+        top: 6.5rem;
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+
+        &.main {
+            background: transparent url(../../../assets/images/dashboard_bg02.png) no-repeat;
+            background-position: center;
+            background-size: 50% 100%;
+        }
+    }
+}
+
+.focus {
+    span:nth-child(1) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: @statistical-border-width*2;
+            background: linear-gradient(90deg, @statistical-primary-color 0.5rem, transparent 0.5rem, transparent calc(100% - 0.5rem), @statistical-primary-color 0);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: @statistical-border-width*2;
+            background: linear-gradient(90deg, @statistical-primary-color 0.5rem, transparent 0.5rem, transparent calc(100% - 0.5rem), @statistical-primary-color 0);
+        }
+    }
+
+    span:nth-child(2) {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: @statistical-border-width*2;
+            background: linear-gradient(0deg, @statistical-primary-color 0.5rem, transparent 0.5rem, transparent calc(100% - 0.5rem), @statistical-primary-color 0);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: @statistical-border-width*2;
+            background: linear-gradient(0deg, @statistical-primary-color 0.5rem, transparent 0.5rem, transparent calc(100% - 0.5rem), @statistical-primary-color 0);
+        }
+    }
+}
+
+.mapboxgl {
+    &-ctrl {
+        left: 26rem !important;
+    }
+}

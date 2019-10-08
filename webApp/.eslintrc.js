@@ -1,0 +1,41 @@
+module.exports = {
+	env: {
+		browser: true,
+		node: true,
+		es6: true,
+	},
+	parser: 'babel-eslint',
+	plugins: ['react'],
+	extends: ['plugin:react/recommended', 'plugin:prettier/recommended'],
+	parserOptions: {
+		ecmaVersion: 6,
+		sourceType: 'module',
+		ecmaFeatures: {
+			experimentalObjectRestSpread: true,
+			jsx: true,
+		},
+	},
+	settings: {
+		polyfills: ['fetch', 'promises'],
+	},
+	rules: {
+		'prettier/prettier': 1,
+		'quotes': [1, 'single'],
+		'react/no-string-refs': 0,
+		'react/prop-types': 0,
+		'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
+		'react/self-closing-comp': 1,
+		'react/display-name':0,
+		'arrow-body-style': [2, 'as-needed'],
+		'global-require': [0],
+		'prefer-template': 2,
+		'no-undef': 2,
+		'no-param-reassign': 0,
+		'no-constant-condition': 2,
+		'no-unused-vars': 2,
+		'no-console': 1,
+		'no-use-before-define': 2,
+		'no-trailing-spaces': [1, { skipBlankLines: true }],
+		'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 1,
+	},
+};

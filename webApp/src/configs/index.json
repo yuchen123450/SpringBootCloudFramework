@@ -1,0 +1,11 @@
+{
+    "currentReleaseVersion": "Default",
+    "project": [
+        {
+            "name": "default",
+            "version": "V2.1.0.2",
+            "locale": "locales/default",
+            "statistics": "statistics/default"
+        }
+    ]
+}

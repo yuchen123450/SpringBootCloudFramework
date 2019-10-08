@@ -1,0 +1,36 @@
+{
+	"presets": [
+		
+		[
+			"@babel/preset-env",
+			{
+				"useBuiltIns": "entry", // 按需注入
+				// "useBuiltIns": "usage",// 按需注入
+				"corejs": 2 // 这里需要注意：是根据你的版本来写
+			}
+		],
+		"@babel/preset-react"
+	],
+	"plugins": [
+		"@babel/plugin-transform-runtime",
+		[
+			"@babel/plugin-proposal-decorators",
+			{
+				"legacy": true
+			}
+		],
+		[
+			"@babel/plugin-proposal-class-properties",
+			{
+				"loose": true
+			}
+		],
+		[
+			"import",
+			{
+				"libraryName": "antd",
+				"style": true
+			}
+		]
+	]
+}

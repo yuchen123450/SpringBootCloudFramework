@@ -1,0 +1,34 @@
+.ellipsis {
+    // overflow: hidden;
+    // display: inline-block;
+    // word-break: break-all;
+    // width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* 可以显示的行数，超出部分用...表示*/
+    /*! autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+
+}
+
+.lines {
+    position: relative;
+
+    .shadow {
+        display: block;
+        position: absolute;
+        color: transparent;
+        opacity: 0;
+        z-index: -999;
+    }
+}
+
+.lineClamp {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}

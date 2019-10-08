@@ -1,0 +1,98 @@
+.mapLegend {
+    position: absolute;
+    right: 27rem;
+    bottom: 20rem;
+
+    >div {
+        margin: 0.6rem -0.8rem;
+    }
+
+    & li {
+        min-width: 10rem;
+        list-style: none;
+        height: 2.6rem;
+        font-size: 1rem;
+        margin-top: 0.2rem;
+
+        & a {
+            text-decoration: none;
+        }
+
+        & span {
+            width: 100%;
+            margin: 0.2rem 0 0 0.5rem;
+            opacity: 1;
+            color: @statistical-primary-color;
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+
+    & .company {
+        & .icon {
+            margin-right: 0.5rem;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        & .normal {
+            >.icon {
+                background: url(../../../../../../assets/images/company.png) no-repeat;
+                background-size: 3rem;
+                background-position: center center;
+            }
+        }
+
+        & .warning {
+            >.icon {
+                background: url(../../../../../../assets/images/warningTri.png) no-repeat;
+                background-size: 3rem;
+                background-position: center center;
+            }
+        }
+
+        & .alarm {
+            >.icon {
+                background: url(../../../../../../assets/images/alarmTri.png) no-repeat;
+                background-size: 3rem;
+                background-position: center center;
+            }
+        }
+    }
+
+    & .station {
+        & .icon {
+            margin: 0.6rem 1rem;
+            width: 1.5rem;
+            height: 1rem;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            box-shadow: 0 0 0.1rem 0.1rem #cccfff;
+        }
+
+        & .noData {
+            >.icon {
+                background-color: @disable-color;
+            }
+        }
+
+        & .normal {
+            >.icon {
+                background-color: @success-color;
+            }
+        }
+
+        & .warning {
+            >.icon {
+                background-color: @warning-color;
+            }
+        }
+
+        & .alarm {
+            >.icon {
+                background-color: @error-color;
+            }
+        }
+    }
+}

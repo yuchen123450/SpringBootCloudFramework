@@ -1,0 +1,122 @@
+.map {
+    height: 100%;
+
+    .mapboxgl {
+        &-ctrl {
+            left: 0;
+            position: absolute;
+            right: auto;
+
+            &-group {
+                background: transparent;
+
+                &:not(:empty) {
+                    box-shadow: initial;
+                    border: @statistical-border-color @statistical-border-width solid;
+                    border-radius: 0;
+                }
+
+                &>button+button {
+                    border-top: solid @statistical-border-width @statistical-border-color;
+                }
+            }
+
+            &-icon {
+                border-radius: 0;
+                background-size: 1.3rem !important;
+                background-position: center !important;
+
+                &:hover {
+                    background-size: 1.5rem !important;
+                    background-position: center !important;
+                }
+
+                &.mapboxgl-ctrl-zoom-in {
+                    background: url("../../assets/images/jia.png") no-repeat;
+                }
+
+                &.mapboxgl-ctrl-zoom-out {
+                    background: url("../../assets/images/jian.png") no-repeat;
+                }
+
+                &.mapboxgl-ctrl-init-map {
+                    background: url("../../assets/images/initnav.png") no-repeat;
+                }
+            }
+
+            &-logo,
+            &-attrib-inner {
+                display: none !important;
+            }
+
+            &-canvas-container {
+                height: 100%;
+
+                >canvas {
+                    outline: none;
+                }
+            }
+        }
+
+        &-popup {
+            z-index: 1;
+
+            &-tip {
+                border-top-color: rgba(50, 50, 50, 0.7) !important;
+            }
+
+            &-content {
+                white-space: nowrap;
+                transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+                background-color: rgba(50, 50, 50, 0.7);
+                border-style: solid;
+                border-width: 0px;
+                border-color: rgb(51, 51, 51);
+                border-radius: 4px;
+                color: rgb(228, 242, 255);
+                font: 1rem "Microsoft YaHei";
+                padding: 5px;
+                text-align: left;
+                pointer-events: none;
+            }
+        }
+    }
+
+    .coordinates {
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        position: absolute;
+        bottom: 64px;
+        left: 10px;
+        padding: 5px 10px;
+        margin: 0;
+        font-size: @statistical-font*0.9;
+        line-height: 18px;
+        border-radius: 3px;
+        display: none;
+    }
+
+    .alarmMarker {
+        background-image: url(../../assets/images/alarmTri.png);
+        background-position: center 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(-50%, -50%) translate(1258px, 474px);
+    }
+
+    .warningMarker {
+        background-image: url(../../assets/images/warningTri.png);
+        background-position: center 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(-50%, -50%) translate(1258px, 474px);
+    }
+
+    .normalMarker {
+        background-image: url(../../assets/images/company.png);
+        background-position: center 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: translate(-50%, -50%) translate(1258px, 474px);
+    }
+}

@@ -1,0 +1,1203 @@
+@lcd-text-width: 0.5rem;
+@lcd-border-width: @lcd-text-width*0.5;
+@lcd-split-width: @lcd-text-width*0.1;
+.LCD {
+    >div {
+        position: relative;
+        display: inline-flex;
+
+        .digit,
+        .letter {
+            position: relative;
+
+            div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                span {
+                    opacity: 0.05;
+                    position: absolute;
+                    transition: 0.25s;
+
+                    &:before,
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        right: 0;
+                    }
+                }
+
+                /* 1 */
+
+                &.one .d5,
+                &.one .d7 {
+                    opacity: 1;
+                }
+
+                /* 2 */
+
+                &.two .d1,
+                &.two .d5,
+                &.two .d2,
+                &.two .d6,
+                &.two .d3 {
+                    opacity: 1;
+                }
+
+                /* 3 */
+
+                &.three .d1,
+                &.three .d5,
+                &.three .d2,
+                &.three .d7,
+                &.three .d3 {
+                    opacity: 1;
+                }
+
+                /* 4 */
+
+                &.four .d5,
+                &.four .d2,
+                &.four .d4,
+                &.four .d7 {
+                    opacity: 1;
+                }
+
+                /* 5 */
+
+                &.five .d1,
+                &.five .d2,
+                &.five .d4,
+                &.five .d3,
+                &.five .d7 {
+                    opacity: 1;
+                }
+
+                /* 6 */
+
+                &.six .d1,
+                &.six .d2,
+                &.six .d4,
+                &.six .d3,
+                &.six .d6,
+                &.six .d7 {
+                    opacity: 1;
+                }
+
+
+                /* 7 */
+
+                &.seven .d1,
+                &.seven .d5,
+                &.seven .d7 {
+                    opacity: 1;
+                }
+
+                /* 8 */
+
+                &.eight .d1,
+                &.eight .d2,
+                &.eight .d3,
+                &.eight .d4,
+                &.eight .d5,
+                &.eight .d6,
+                &.eight .d7 {
+                    opacity: 1;
+                }
+
+                /* 9 */
+
+                &.nine .d1,
+                &.nine .d2,
+                &.nine .d3,
+                &.nine .d4,
+                &.nine .d5,
+                &.nine .d7 {
+                    opacity: 1;
+                }
+
+                /* 0 */
+
+                &.zero .d1,
+                &.zero .d3,
+                &.zero .d4,
+                &.zero .d5,
+                &.zero .d6,
+                &.zero .d7 {
+                    opacity: 1;
+                }
+
+                /* A */
+
+                &.A .d1,
+                &.A .d2,
+                &.A .d4,
+                &.A .d5,
+                &.A .d6,
+                &.A .d7 {
+                    opacity: 1;
+                }
+
+                /* B */
+
+                &.B .d1,
+                &.B .d2,
+                &.B .d3,
+                &.B .d4,
+                &.B .d5,
+                &.B .d6,
+                &.B .d7 {
+                    opacity: 1;
+                }
+
+                &.B .d1::after,
+                &.B .d3::after,
+                &.B .d5::before,
+                &.B .d7::after {
+                    opacity: 0;
+                }
+
+                /* C */
+
+                &.C .d1,
+                &.C .d3,
+                &.C .d4,
+                &.C .d6 {
+                    opacity: 1;
+                }
+
+                /* D */
+
+                &.D .d1,
+                &.D .d3,
+                &.D .d4,
+                &.D .d5,
+                &.D .d6,
+                &.D .d7 {
+                    opacity: 1;
+                }
+
+                &.D .d1::after,
+                &.D .d3::after,
+                &.D .d5::before,
+                &.D .d7::after {
+                    opacity: 0;
+                }
+
+                /* E */
+
+                &.E .d1,
+                &.E .d2,
+                &.E .d3,
+                &.E .d4,
+                &.E .d6 {
+                    opacity: 1;
+                }
+
+                /* F */
+
+                &.F .d1,
+                &.F .d2,
+                &.F .d4,
+                &.F .d6 {
+                    opacity: 1;
+                }
+
+                /* G */
+
+                &.G .d1,
+                &.G .d2,
+                &.G .d3,
+                &.G .d4,
+                &.G .d6,
+                &.G .d7 {
+                    opacity: 1;
+                }
+
+                &.G .d2::before {
+                    opacity: 0;
+                }
+
+                /* H */
+
+                &.H .d2,
+                &.H .d4,
+                &.H .d5,
+                &.H .d6,
+                &.H .d7 {
+                    opacity: 1;
+                }
+
+                /* I */
+
+                &.I .d5,
+                &.I .d7 {
+                    opacity: 1;
+                }
+
+                /* J */
+
+                &.J .d3,
+                &.J .d5,
+                &.J .d6,
+                &.J .d7 {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .small {
+
+        .digit,
+        .letter {
+            width: @lcd-text-width;
+            height: @lcd-text-width*2;
+            margin: 0 @lcd-border-width*0.25;
+
+
+            span::before,
+            span::after {
+                border: @lcd-border-width*0.5 solid transparent;
+            }
+
+            .d1 {
+                width: @lcd-text-width*0.5;
+                height: @lcd-border-width*0.5;
+                top: 0;
+                left: @lcd-border-width*0.5;
+
+                &:before {
+                    border-width: 0 @lcd-border-width*0.5 @lcd-border-width*0.5 0;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width*0.5;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width*0.5 @lcd-border-width*0.5;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width*0.5;
+                }
+            }
+
+            .d2 {
+                height: @lcd-border-width*0.5;
+                width: @lcd-text-width*0.5;
+                top: @lcd-text-width*0.5 + @lcd-border-width - @lcd-split-width;
+                left: @lcd-border-width*0.5;
+
+                &:before {
+                    border-width: @lcd-border-width*0.25 @lcd-border-width*0.5 @lcd-border-width*0.25;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.25 @lcd-border-width*0.5 @lcd-border-width*0.25;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width;
+                }
+            }
+
+            .d3 {
+                height: @lcd-border-width*0.5;
+                width: @lcd-text-width*0.5;
+                top: (@lcd-text-width*0.5 + @lcd-border-width - @lcd-split-width)*2;
+                left: @lcd-border-width*0.5;
+
+                &:before {
+                    border-width: @lcd-border-width*0.5 @lcd-border-width*0.5 0 0;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width*0.5;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.5 0 0 @lcd-border-width*0.5;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width*0.5;
+                }
+            }
+
+            .d4 {
+                width: @lcd-border-width*0.5;
+                height: @lcd-text-width*0.5;
+                top: @lcd-border-width*0.5 + @lcd-split-width*0.5;
+                left: 0;
+
+                &:before {
+                    border-width: 0 @lcd-border-width*0.5 @lcd-border-width*0.5 0;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.5;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width*0.5 @lcd-border-width*0.5;
+                    border-left-color: inherit;
+                    bottom: -@lcd-border-width*0.5;
+                }
+            }
+
+            .d5 {
+                width: @lcd-border-width*0.5;
+                height: @lcd-text-width*0.5;
+                top: @lcd-border-width*0.5 + @lcd-split-width*0.5;
+                right: 0;
+
+                &:before {
+                    border-width: 0 0 @lcd-border-width*0.5 @lcd-border-width*0.5;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.5;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.5 0 0 @lcd-border-width*0.5;
+                    border-top-color: inherit;
+                    bottom: -@lcd-border-width*0.5;
+                }
+            }
+
+            .d6 {
+                width: @lcd-border-width*0.5;
+                height: @lcd-text-width*0.5;
+                top: @lcd-text-width*0.5 + @lcd-border-width*1.5;
+                left: 0;
+
+                &:before {
+                    border-width: 0 @lcd-border-width*0.5 @lcd-border-width*0.5 0;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.5;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width*0.5 @lcd-border-width*0.5;
+                    border-left-color: inherit;
+                    bottom: -@lcd-border-width*0.5;
+                }
+            }
+
+            .d7 {
+                width: @lcd-border-width*0.5;
+                height: @lcd-text-width*0.5;
+                top: @lcd-text-width*0.5+@lcd-border-width*1.5;
+                right: 0;
+
+                &:before {
+                    border-width: 0 0 @lcd-border-width*0.5 @lcd-border-width*0.5;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.5;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.5 0 0 @lcd-border-width*0.5;
+                    border-top-color: inherit;
+                    bottom: -@lcd-border-width*0.5;
+                }
+            }
+
+        }
+
+        .symbol {
+            div {
+                position: relative;
+
+                span {
+                    opacity: 1;
+                    position: absolute;
+                }
+            }
+
+            .dot {
+                width: @lcd-border-width*0.5;
+                height: @lcd-text-width*2;
+                margin: 0 @lcd-border-width*0.25;
+
+                span {
+                    width: @lcd-border-width*0.5;
+                    height: @lcd-border-width*0.5;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            .dots {
+                width: @lcd-border-width*0.5;
+                height: @lcd-text-width*2;
+                margin: 0 @lcd-border-width*0.25;
+
+                span {
+                    &:nth-child(1) {
+                        position: absolute;
+                        width: 100%;
+                        height: @lcd-border-width*0.5;
+                        left: 0;
+                        top: @lcd-text-width*0.5;
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: 100%;
+                        height: @lcd-border-width*0.5;
+                        left: 0;
+                        top: @lcd-text-width*0.5 + @lcd-border-width*1.5;
+                    }
+                }
+            }
+
+            .line {
+                width: @lcd-text-width;
+                height: @lcd-text-width*2;
+                margin: 0 @lcd-border-width*0.25;
+
+                span {
+                    height: @lcd-border-width*0.5;
+                    width: @lcd-text-width*0.5;
+                    top: @lcd-text-width*0.5 + @lcd-border-width - @lcd-split-width;
+                    left: @lcd-border-width*0.5;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: @lcd-border-width*0.5 solid transparent;
+                        border-width: @lcd-border-width*0.25 @lcd-border-width*0.5 @lcd-border-width*0.25;
+                        border-right-color: inherit;
+                        left: -@lcd-border-width;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: @lcd-border-width*0.5 solid transparent;
+                        border-width: @lcd-border-width*0.25 @lcd-border-width*0.5 @lcd-border-width*0.25;
+                        border-left-color: inherit;
+                        right: -@lcd-border-width;
+                    }
+                }
+            }
+
+            .slant {
+                width: @lcd-text-width*0.5;
+                height: @lcd-text-width*2;
+                margin: 0 @lcd-border-width*0.25;
+
+                span {
+                    &:nth-child(1) {
+                        position: absolute;
+                        width: @lcd-border-width*0.5;
+                        height: @lcd-text-width*0.9;
+                        right: 0;
+                        top: 0;
+                        transform: skewX(-15deg);
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: @lcd-border-width*0.5;
+                        height: @lcd-text-width*0.9;
+                        left: 0;
+                        bottom: 0;
+                        transform: skewX(-15deg);
+                    }
+                }
+            }
+
+            .percent {
+                width: @lcd-text-width;
+                height: @lcd-text-width*2;
+                margin: 0 @lcd-border-width*0.25;
+
+                span {
+                    &:nth-child(1) {
+                        position: absolute;
+                        width: @lcd-border-width*0.5;
+                        height: @lcd-text-width*0.9;
+                        right: @lcd-split-width;
+                        top: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: @lcd-border-width*0.5;
+                        height: @lcd-text-width*0.9;
+                        left: @lcd-split-width;
+                        bottom: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(3) {
+                        position: absolute;
+                        width: @lcd-border-width*0.5;
+                        height: @lcd-border-width*0.5;
+                        left: 0;
+                        top: @lcd-text-width*0.5;
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(4) {
+                        position: absolute;
+                        width: @lcd-border-width*0.5;
+                        height: @lcd-border-width*0.5;
+                        right: 0;
+                        bottom: @lcd-text-width*0.5;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        .char {
+            line-height: @lcd-text-width*2;
+            font-size: @lcd-text-width*2;
+
+            span.empty {
+                padding: 0 @lcd-text-width*0.5;
+            }
+        }
+    }
+
+    .default {
+
+        .digit,
+        .letter {
+            width: @lcd-text-width*1.5;
+            height: @lcd-text-width*3;
+            margin: 0 @lcd-border-width*0.375;
+            position: relative;
+
+
+            span:before,
+            span:after {
+                border: @lcd-border-width*0.75 solid transparent;
+            }
+
+            .d1 {
+                width: @lcd-text-width*0.75;
+                height: @lcd-border-width*0.75;
+                top: 0;
+                left: @lcd-border-width*0.75;
+
+                &:before {
+                    border-width: 0 @lcd-border-width*0.75 @lcd-border-width*0.75 0;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width*0.75;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width*0.75 @lcd-border-width*0.75;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width*0.75;
+                }
+            }
+
+            .d2 {
+                height: @lcd-border-width*0.75;
+                width: @lcd-text-width*0.75;
+                top: @lcd-text-width*0.75 + @lcd-border-width*1.5 - @lcd-split-width*1.5;
+                left: @lcd-border-width*0.75;
+
+                &:before {
+                    border-width: @lcd-border-width*0.375 @lcd-border-width*0.75 @lcd-border-width*0.375;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width*1.5;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.375 @lcd-border-width*0.75 @lcd-border-width*0.375;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width*1.5;
+                }
+            }
+
+            .d3 {
+                height: @lcd-border-width*0.75;
+                width: @lcd-text-width*0.75;
+                top: (@lcd-text-width*0.75 + @lcd-border-width*1.5 - @lcd-split-width*1.5)*2;
+                left: @lcd-border-width*0.75;
+
+                &:before {
+                    border-width: @lcd-border-width*0.75 @lcd-border-width*0.75 0 0;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width*0.75;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.75 0 0 @lcd-border-width*0.75;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width*0.75;
+                }
+            }
+
+            .d4 {
+                width: @lcd-border-width*0.75;
+                height: @lcd-text-width*0.75;
+                top: @lcd-border-width*0.75 + @lcd-split-width*0.75;
+                left: 0;
+
+                &:before {
+                    border-width: 0 @lcd-border-width*0.75 @lcd-border-width*0.75 0;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.75;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width*0.75 @lcd-border-width*0.75;
+                    border-left-color: inherit;
+                    bottom: -@lcd-border-width*0.75;
+                }
+            }
+
+            .d5 {
+                width: @lcd-border-width*0.75;
+                height: @lcd-text-width*0.75;
+                top: @lcd-border-width*0.75 + @lcd-split-width*0.75;
+                right: 0;
+
+                &:before {
+                    border-width: 0 0 @lcd-border-width*0.75 @lcd-border-width*0.75;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.75;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.75 0 0 @lcd-border-width*0.75;
+                    border-top-color: inherit;
+                    bottom: -@lcd-border-width*0.75;
+                }
+            }
+
+            .d6 {
+                width: @lcd-border-width*0.75;
+                height: @lcd-text-width*0.75;
+                top: @lcd-text-width*0.75 + @lcd-border-width*2.25;
+                left: 0;
+
+                &:before {
+                    border-width: 0 @lcd-border-width*0.75 @lcd-border-width*0.75 0;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.75;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width*0.75 @lcd-border-width*0.75;
+                    border-left-color: inherit;
+                    bottom: -@lcd-border-width*0.75;
+                }
+            }
+
+            .d7 {
+                width: @lcd-border-width*0.75;
+                height: @lcd-text-width*0.75;
+                top: @lcd-text-width*0.75 + @lcd-border-width*2.25;
+                right: 0;
+
+                &:before {
+                    border-width: 0 0 @lcd-border-width*0.75 @lcd-border-width*0.75;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width*0.75;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.75 0 0 @lcd-border-width*0.75;
+                    border-top-color: inherit;
+                    bottom: -@lcd-border-width*0.75;
+                }
+            }
+
+        }
+
+        .symbol {
+            div {
+                position: relative;
+
+                span {
+                    opacity: 1;
+                    position: absolute;
+                }
+            }
+
+            .dot {
+                width: @lcd-border-width*0.75;
+                height: @lcd-text-width*3;
+                margin: 0 @lcd-border-width*0.375;
+                position: relative;
+
+                span {
+                    opacity: 1;
+                    position: absolute;
+                    width: @lcd-border-width*0.75;
+                    height: @lcd-border-width*0.75;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            .dots {
+                width: @lcd-border-width*0.75;
+                height: @lcd-text-width*3;
+                margin: 0 @lcd-border-width*0.375;
+                position: relative;
+
+                span {
+                    opacity: 1;
+
+                    &:nth-child(1) {
+                        position: absolute;
+                        width: 100%;
+                        height: @lcd-border-width*0.75;
+                        left: 0;
+                        top: @lcd-text-width*0.75;
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: 100%;
+                        height: @lcd-border-width*0.75;
+                        left: 0;
+                        top: @lcd-text-width*0.75 + @lcd-border-width*2.25;
+                    }
+                }
+            }
+
+            .line {
+                width: @lcd-text-width*1.5;
+                height: @lcd-text-width*3;
+                margin: 0 @lcd-border-width*0.375;
+                position: relative;
+
+                span {
+                    opacity: 1;
+                    position: absolute;
+                    height: @lcd-border-width*0.75;
+                    width: @lcd-text-width*0.75;
+                    top: @lcd-text-width*0.75 + @lcd-border-width*1.5 - @lcd-split-width*1.5;
+                    left: @lcd-border-width*0.75;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: @lcd-border-width*0.75 solid transparent;
+                        border-width: @lcd-border-width*0.375 @lcd-border-width*0.75 @lcd-border-width*0.375;
+                        border-right-color: inherit;
+                        left: -@lcd-border-width*1.5;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: @lcd-border-width*0.75 solid transparent;
+                        border-width: @lcd-border-width*0.375 @lcd-border-width*0.75 @lcd-border-width*0.375;
+                        border-left-color: inherit;
+                        right: -@lcd-border-width*1.5;
+                    }
+                }
+            }
+
+            .slant {
+                width: @lcd-text-width*1.5;
+                height: @lcd-text-width*3;
+                margin: 0 @lcd-border-width*0.375;
+                position: relative;
+
+                span {
+                    opacity: 1;
+
+                    &:nth-child(1) {
+                        position: absolute;
+                        width: @lcd-border-width*0.75;
+                        height: @lcd-text-width*1.35;
+                        right: @lcd-split-width*1.5;
+                        top: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: @lcd-border-width*0.75;
+                        height: @lcd-text-width*1.35;
+                        left: @lcd-split-width*1.5;
+                        bottom: 0;
+                        transform: skewX(-30deg);
+                    }
+                }
+            }
+
+            .percent {
+                width: @lcd-text-width*1.5;
+                height: @lcd-text-width*3;
+                margin: 0 @lcd-border-width*0.375;
+                position: relative;
+
+                span {
+                    opacity: 1;
+
+                    &:nth-child(1) {
+                        position: absolute;
+                        width: @lcd-border-width*0.75;
+                        height: @lcd-text-width*1.35;
+                        right: @lcd-split-width*1.5;
+                        top: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: @lcd-border-width*0.75;
+                        height: @lcd-text-width*1.35;
+                        left: @lcd-split-width*1.5;
+                        bottom: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(3) {
+                        position: absolute;
+                        width: @lcd-border-width*0.75;
+                        height: @lcd-border-width*0.75;
+                        left: 0;
+                        top: @lcd-text-width*0.75;
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(4) {
+                        position: absolute;
+                        width: @lcd-border-width*0.75;
+                        height: @lcd-border-width*0.75;
+                        right: 0;
+                        bottom: @lcd-text-width*0.75;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        .char {
+            line-height: @lcd-text-width*3;
+            font-size: @lcd-text-width*3;
+            opacity: 1;
+
+            span.empty {
+                padding: 0 @lcd-text-width*0.75;
+            }
+        }
+    }
+
+    .large {
+
+        .digit,
+        .letter {
+            width: @lcd-text-width*2;
+            height: @lcd-text-width*4;
+            margin: 0 @lcd-border-width*0.5;
+            position: relative;
+
+            span:before,
+            span:after {
+                border: @lcd-border-width solid transparent;
+            }
+
+
+            .d1 {
+                width: @lcd-text-width;
+                height: @lcd-border-width;
+                top: 0;
+                left: @lcd-border-width;
+
+                &:before {
+                    border-width: 0 @lcd-border-width @lcd-border-width 0;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width @lcd-border-width;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width;
+                }
+            }
+
+            .d2 {
+                height: @lcd-border-width;
+                width: @lcd-text-width;
+                top: @lcd-text-width+@lcd-border-width*2-@lcd-split-width*2;
+                left: @lcd-border-width;
+
+                &:before {
+                    border-width: @lcd-border-width*0.5 @lcd-border-width @lcd-border-width*0.5;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width*2;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width*0.5 @lcd-border-width @lcd-border-width*0.5;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width*2;
+                }
+            }
+
+            .d3 {
+                height: @lcd-border-width;
+                width: @lcd-text-width;
+                top: (@lcd-text-width+@lcd-border-width*2-@lcd-split-width*2)*2;
+                left: @lcd-border-width;
+
+                &:before {
+                    border-width: @lcd-border-width @lcd-border-width 0 0;
+                    border-right-color: inherit;
+                    left: -@lcd-border-width;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width 0 0 @lcd-border-width;
+                    border-left-color: inherit;
+                    right: -@lcd-border-width;
+                }
+            }
+
+            .d4 {
+                width: @lcd-border-width;
+                height: @lcd-text-width;
+                top: @lcd-border-width+@lcd-split-width;
+                left: 0;
+
+                &:before {
+                    border-width: 0 @lcd-border-width @lcd-border-width 0;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width @lcd-border-width;
+                    border-left-color: inherit;
+                    bottom: -@lcd-border-width;
+                }
+            }
+
+            .d5 {
+                width: @lcd-border-width;
+                height: @lcd-text-width;
+                top: @lcd-border-width+@lcd-split-width;
+                right: 0;
+
+                &:before {
+                    border-width: 0 0 @lcd-border-width @lcd-border-width;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width 0 0 @lcd-border-width;
+                    border-top-color: inherit;
+                    bottom: -@lcd-border-width;
+                }
+            }
+
+            .d6 {
+                width: @lcd-border-width;
+                height: @lcd-text-width;
+                top: @lcd-text-width+@lcd-border-width*3;
+                left: 0;
+
+                &:before {
+                    border-width: 0 @lcd-border-width @lcd-border-width 0;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width;
+                }
+
+                &:after {
+                    border-width: 0 0 @lcd-border-width @lcd-border-width;
+                    border-left-color: inherit;
+                    bottom: -@lcd-border-width;
+                }
+            }
+
+            .d7 {
+                width: @lcd-border-width;
+                height: @lcd-text-width;
+                top: @lcd-text-width+@lcd-border-width*3;
+                right: 0;
+
+                &:before {
+                    border-width: 0 0 @lcd-border-width @lcd-border-width;
+                    border-bottom-color: inherit;
+                    top: -@lcd-border-width;
+                }
+
+                &:after {
+                    border-width: @lcd-border-width 0 0 @lcd-border-width;
+                    border-top-color: inherit;
+                    bottom: -@lcd-border-width;
+                }
+            }
+
+        }
+
+        .symbol {
+            div {
+                position: relative;
+
+                span {
+                    opacity: 1;
+                    position: absolute;
+                }
+            }
+
+            .dot {
+                width: @lcd-border-width;
+                height: @lcd-text-width*4;
+                margin: 0 @lcd-border-width*0.5;
+
+                span {
+                    width: @lcd-border-width;
+                    height: @lcd-border-width;
+                    left: 0;
+                    bottom: 0;
+                }
+            }
+
+            .dots {
+                width: @lcd-border-width;
+                height: @lcd-text-width*4;
+                margin: 0 @lcd-border-width*0.5;
+
+                span {
+                    &:nth-child(1) {
+                        width: 100%;
+                        height: @lcd-border-width;
+                        left: 0;
+                        top: @lcd-text-width;
+                    }
+
+                    &:nth-child(2) {
+                        width: 100%;
+                        height: @lcd-border-width;
+                        left: 0;
+                        top: @lcd-text-width+@lcd-border-width*3;
+                    }
+                }
+            }
+
+            .line {
+                width: @lcd-text-width*2;
+                height: @lcd-text-width*4;
+                margin: 0 @lcd-border-width*0.5;
+
+                span {
+                    height: @lcd-border-width;
+                    width: @lcd-text-width;
+                    top: @lcd-text-width+@lcd-border-width*2-@lcd-split-width*2;
+                    left: @lcd-border-width;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: @lcd-border-width solid transparent;
+                        border-width: @lcd-border-width*0.5 @lcd-border-width @lcd-border-width*0.5;
+                        border-right-color: inherit;
+                        left: -@lcd-border-width*2;
+                    }
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: @lcd-border-width solid transparent;
+                        border-width: @lcd-border-width*0.5 @lcd-border-width @lcd-border-width*0.5;
+                        border-left-color: inherit;
+                        right: -@lcd-border-width*2;
+                    }
+                }
+            }
+
+            .slant {
+                width: @lcd-text-width*2;
+                height: @lcd-text-width*4;
+                margin: 0 @lcd-border-width*0.5;
+
+                span {
+                    &:nth-child(1) {
+                        width: @lcd-border-width;
+                        height: @lcd-text-width*1.8;
+                        right: @lcd-split-width;
+                        top: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: @lcd-border-width;
+                        height: @lcd-text-width*1.8;
+                        left: @lcd-split-width;
+                        bottom: 0;
+                        transform: skewX(-30deg);
+                    }
+                }
+            }
+
+            .percent {
+                width: @lcd-text-width*2;
+                height: @lcd-text-width*4;
+                margin: 0 @lcd-border-width*0.5;
+
+                span {
+                    &:nth-child(1) {
+                        width: @lcd-border-width;
+                        height: @lcd-text-width*1.8;
+                        right: @lcd-split-width;
+                        top: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(2) {
+                        position: absolute;
+                        width: @lcd-border-width;
+                        height: @lcd-text-width*1.8;
+                        left: @lcd-split-width;
+                        bottom: 0;
+                        transform: skewX(-30deg);
+                    }
+
+                    &:nth-child(3) {
+                        position: absolute;
+                        width: @lcd-border-width;
+                        height: @lcd-border-width;
+                        left: 0;
+                        top: @lcd-text-width;
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(4) {
+                        position: absolute;
+                        width: @lcd-border-width;
+                        height: @lcd-border-width;
+                        right: 0;
+                        bottom: @lcd-text-width;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        .char {
+            line-height: @lcd-text-width*4;
+            font-size: @lcd-text-width*4;
+
+            span.empty {
+                padding: 0 @lcd-text-width;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,128 @@
+@import '../../../../containers/map/index.less';
+@import './containers/abnormalRateTrend/index.less';
+@import './containers/statusEvaluate/index.less';
+@import './containers/mapCrumbs/index.less';
+@import './containers/mapLegend/index.less';
+
+
+.container {
+    height: 100%;
+    overflow: auto;
+    background-position: center;
+    background-size: 100% 100%;
+
+    &:before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+
+    >.content {
+        overflow: hidden;
+        position: absolute;
+        top: 7rem;
+        bottom: 1.5rem;
+        left: 1.2rem;
+        right: 1.2rem;
+        background: transparent;
+
+        .content-left {
+            position: absolute;
+            top: 0.5rem;
+            bottom: 1rem;
+            left: 0.3rem;
+
+            >.statistical-box {
+                height: 33%;
+            }
+
+            >.statistical-box:nth-child(2) {
+                margin: 0.5rem 0;
+            }
+        }
+
+        .content-center {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 23rem;
+            left: 23rem;
+        }
+
+        .content-right {
+            position: absolute;
+            top: 0.5rem;
+            bottom: 1rem;
+            right: 0.3rem;
+
+            >.statistical-box {
+                height: 33%;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            >.statistical-box:nth-child(2) {
+                margin: 0.5rem 0;
+            }
+        }
+    }
+}
+
+.ant-badge-status-dot {
+    width: 0.65rem !important;
+    height: 0.65rem !important;
+    border: 1px solid #b3b2b2;
+}
+
+.device-list-row {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    color: @statistical-primary-color;
+    text-align: center;
+    line-height: 1rem;
+
+    & .name {
+        background: url(../../../../assets/images/bellTips.png) no-repeat;
+        background-size: 2.5rem;
+        background-position: center top 0.1rem;
+        padding-top: 2.5rem;
+        color: @statistical-color;
+    }
+
+    & .value {
+        font-size: 1.25rem;
+        color: @statistical-primary-color;
+        top: 50%;
+    }
+
+    & .total {
+        font-size: 2.25rem;
+        color: @statistical-primary-color;
+    }
+
+    & .totalName {
+        font-size: 1rem;
+        color: @statistical-color;
+    }
+}
+
+.device-list {
+    & .ant-list-item {
+        border-bottom: @statistical-border-color @statistical-border-width*0.5 solid !important;
+    }
+
+    .abnormalHead {
+        background: linear-gradient(90deg, @statistical-background-color, @statistical-btn-background-color, @statistical-background-color);
+        height: 25%;
+    }
+
+    .headText {
+        color: @statistical-color;
+    }
+}
+
+.device-list-item-bottom {
+    border-bottom: @statistical-btn-background-color  !important;
+}
