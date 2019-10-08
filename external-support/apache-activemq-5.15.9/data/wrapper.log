@@ -1,0 +1,1233 @@
+FATAL  | wrapper  | 2019/09/06 14:38:19 | OpenSCManager failed - Access is denied. (0x5)
+STATUS | wrapper  | 2019/09/06 14:38:28 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/06 14:38:28 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/06 14:38:30 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/06 14:38:30 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/06 14:38:30 | 
+INFO   | jvm 1    | 2019/09/06 14:38:30 | 
+INFO   | jvm 1    | 2019/09/06 14:38:30 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/06 14:38:30 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           Reported cause:
+INFO   | jvm 1    | 2019/09/06 14:38:30 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/06 14:38:30 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/06 14:38:30 | 
+INFO   | jvm 1    | 2019/09/06 14:38:30 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/06 14:38:30 |   Heap sizes: current=312320k  free=294296k  max=932352k
+INFO   | jvm 1    | 2019/09/06 14:38:30 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=h02aZBgkCQF_faCv -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=28240 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/06 14:38:30 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/06 14:38:30 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/06 14:38:30 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/06 14:38:30 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/06 14:38:30 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/06 14:38:30 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/06 14:38:31 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/06 14:38:31 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@1d82fc28: startup date [Fri Sep 06 14:38:31 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/06 14:38:33 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/06 14:38:33 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/06 14:38:34 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-63802-1567805913839-0:1) is starting
+INFO   | jvm 1    | 2019/09/06 14:38:34 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:38:34 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/06 14:38:34 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:38:34 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/06 14:38:34 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:38:34 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@76895256{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-63802-1567805913839-0:1) started
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/06 14:38:35 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 93365 mb of usable space. - resetting to maximum available disk space: 93365 mb
+INFO   | jvm 1    | 2019/09/06 14:38:36 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 14:38:37 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/06 14:38:37 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/06 14:38:37 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/06 14:38:38 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 14:38:39 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/06 14:39:28 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:63813 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 14:39:28 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:63814 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 14:39:33 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:63818 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 14:40:03 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:63822 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: tcp://0:0:0:0:0:0:0:1:63822
+INFO   | jvm 1    | 2019/09/06 14:40:03 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:63821 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive (no connection attempt made) for too (>30000) long: tcp://0:0:0:0:0:0:0:1:63821
+INFO   | jvm 1    | 2019/09/06 14:40:03 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:63827 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 14:40:12 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:63828 failed: java.io.EOFException
+STATUS | wrapper  | 2019/09/06 14:41:40 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/06 14:41:40 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/06 14:41:42 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/06 14:41:42 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/06 14:41:42 | 
+INFO   | jvm 1    | 2019/09/06 14:41:42 | 
+INFO   | jvm 1    | 2019/09/06 14:41:42 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/06 14:41:42 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           Reported cause:
+INFO   | jvm 1    | 2019/09/06 14:41:42 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/06 14:41:42 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/06 14:41:42 | 
+INFO   | jvm 1    | 2019/09/06 14:41:42 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/06 14:41:42 |   Heap sizes: current=312320k  free=294296k  max=932352k
+INFO   | jvm 1    | 2019/09/06 14:41:42 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=qYM0SjerbEwxOCcm -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=30296 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/06 14:41:42 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/06 14:41:42 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/06 14:41:42 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/06 14:41:42 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/06 14:41:42 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/06 14:41:42 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/06 14:41:42 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/06 14:41:42 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@1d82fc28: startup date [Fri Sep 06 14:41:42 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/06 14:41:44 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/06 14:41:44 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/06 14:41:44 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/06 14:41:44 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/06 14:41:44 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/06 14:41:44 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-63875-1567806104654-0:1) is starting
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/06 14:41:45 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@107c8673{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/06 14:41:46 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 14:41:46 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/06 14:41:46 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-63875-1567806104654-0:1) started
+INFO   | jvm 1    | 2019/09/06 14:41:46 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/06 14:41:46 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 93368 mb of usable space. - resetting to maximum available disk space: 93368 mb
+INFO   | jvm 1    | 2019/09/06 14:41:47 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 14:41:47 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/06 14:41:47 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/06 14:41:47 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/06 14:41:48 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 14:41:49 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/06 14:51:51 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:64067 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 14:51:51 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:64066 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 14:51:56 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:64071 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+STATUS | wrapper  | 2019/09/06 15:13:35 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/06 15:13:35 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/06 15:13:37 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/06 15:13:37 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/06 15:13:37 | 
+INFO   | jvm 1    | 2019/09/06 15:13:37 | 
+INFO   | jvm 1    | 2019/09/06 15:13:37 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/06 15:13:37 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           Reported cause:
+INFO   | jvm 1    | 2019/09/06 15:13:37 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/06 15:13:37 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/06 15:13:37 | 
+INFO   | jvm 1    | 2019/09/06 15:13:37 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/06 15:13:37 |   Heap sizes: current=312320k  free=294296k  max=932352k
+INFO   | jvm 1    | 2019/09/06 15:13:37 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=HLLP02JnBWPoOXAC -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=27924 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/06 15:13:37 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/06 15:13:37 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/06 15:13:37 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/06 15:13:37 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/06 15:13:37 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/06 15:13:37 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/06 15:13:37 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/06 15:13:37 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@1d82fc28: startup date [Fri Sep 06 15:13:37 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/06 15:13:39 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/06 15:13:39 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/06 15:13:39 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/06 15:13:39 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/06 15:13:39 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-64862-1567808019766-0:1) is starting
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/06 15:13:40 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@107c8673{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-64862-1567808019766-0:1) started
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/06 15:13:41 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 93566 mb of usable space. - resetting to maximum available disk space: 93566 mb
+INFO   | jvm 1    | 2019/09/06 15:13:42 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 15:13:43 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/06 15:13:43 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/06 15:13:43 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/06 15:13:43 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 15:13:44 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+STATUS | wrapper  | 2019/09/06 15:41:42 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/06 15:41:42 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/06 15:41:45 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/06 15:41:45 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/06 15:41:45 | 
+INFO   | jvm 1    | 2019/09/06 15:41:45 | 
+INFO   | jvm 1    | 2019/09/06 15:41:45 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/06 15:41:45 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           Reported cause:
+INFO   | jvm 1    | 2019/09/06 15:41:45 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/06 15:41:45 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/06 15:41:45 | 
+INFO   | jvm 1    | 2019/09/06 15:41:45 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/06 15:41:45 |   Heap sizes: current=312320k  free=294296k  max=932352k
+INFO   | jvm 1    | 2019/09/06 15:41:45 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=nl0XI2KvpgRChq4N -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=16412 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/06 15:41:45 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/06 15:41:45 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/06 15:41:45 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/06 15:41:45 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/06 15:41:45 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/06 15:41:45 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/06 15:41:45 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/06 15:41:45 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@1d82fc28: startup date [Fri Sep 06 15:41:45 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/06 15:41:47 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/06 15:41:47 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/06 15:41:47 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/06 15:41:47 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/06 15:41:47 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-50742-1567809707816-0:1) is starting
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@776fec88{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-50742-1567809707816-0:1) started
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/06 15:41:48 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 90582 mb of usable space. - resetting to maximum available disk space: 90582 mb
+INFO   | jvm 1    | 2019/09/06 15:41:50 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 15:41:50 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/06 15:41:50 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/06 15:41:50 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/06 15:41:51 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 15:41:52 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+STATUS | wrapper  | 2019/09/06 15:43:18 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/06 15:43:19 | Launching a JVM...
+STATUS | wrapper  | 2019/09/06 15:43:19 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/06 15:43:20 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/06 15:43:22 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/06 15:43:22 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/06 15:43:22 | 
+INFO   | jvm 1    | 2019/09/06 15:43:22 | 
+INFO   | jvm 1    | 2019/09/06 15:43:22 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/06 15:43:22 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           Reported cause:
+INFO   | jvm 1    | 2019/09/06 15:43:22 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/06 15:43:22 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/06 15:43:22 | 
+INFO   | jvm 1    | 2019/09/06 15:43:22 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/06 15:43:22 |   Heap sizes: current=312320k  free=294293k  max=932352k
+INFO   | jvm 1    | 2019/09/06 15:43:22 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=LTrAvSbhD0WoRMYm -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=17160 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/06 15:43:22 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/06 15:43:22 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/06 15:43:22 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/06 15:43:22 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/06 15:43:22 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/06 15:43:22 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/06 15:43:22 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/06 15:43:22 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@61a77358: startup date [Fri Sep 06 15:43:22 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/06 15:43:24 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | wrapper  | 2019/09/06 15:43:43 | Wrapper Process has not received any CPU time for 18 seconds.  Extending timeouts.
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-50804-1567809804958-0:1) is starting
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@6c8840f5{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-50804-1567809804958-0:1) started
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 90582 mb of usable space. - resetting to maximum available disk space: 90582 mb
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 15:43:43 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/06 15:47:01 |  INFO | Connector vm://localhost started
+STATUS | wrapper  | 2019/09/06 17:41:13 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/06 17:41:13 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/06 17:41:15 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/06 17:41:15 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/06 17:41:15 | 
+INFO   | jvm 1    | 2019/09/06 17:41:15 | 
+INFO   | jvm 1    | 2019/09/06 17:41:15 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/06 17:41:15 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           Reported cause:
+INFO   | jvm 1    | 2019/09/06 17:41:15 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/06 17:41:15 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/06 17:41:15 | 
+INFO   | jvm 1    | 2019/09/06 17:41:15 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/06 17:41:15 |   Heap sizes: current=312320k  free=294296k  max=932352k
+INFO   | jvm 1    | 2019/09/06 17:41:15 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=gyE7UVBB8o2b9xOo -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=3312 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/06 17:41:15 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/06 17:41:15 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/06 17:41:15 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/06 17:41:15 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/06 17:41:15 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/06 17:41:15 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/06 17:41:15 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/06 17:41:15 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@6475bf8c: startup date [Fri Sep 06 17:41:15 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/06 17:41:18 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/06 17:41:18 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/06 17:41:18 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-55874-1567816878919-0:1) is starting
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@63ee40a{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-55874-1567816878919-0:1) started
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/06 17:41:19 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 90565 mb of usable space. - resetting to maximum available disk space: 90565 mb
+INFO   | jvm 1    | 2019/09/06 17:41:21 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 17:41:21 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/06 17:41:21 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/06 17:41:21 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/06 17:41:21 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/06 17:41:23 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/06 17:41:27 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55912 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:41:38 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55914 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:41:50 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55915 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:03 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55918 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:17 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55920 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:32 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55922 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:39 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55938 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:39 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55939 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:40 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55940 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:42 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55947 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:45 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55948 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:49 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55949 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:42:54 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55952 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:00 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55953 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:00 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55954 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:07 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55955 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:15 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55956 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:24 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55983 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:34 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55996 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:45 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:55997 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:43:57 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56001 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:44:10 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56003 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:44:24 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56005 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:44:40 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56006 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:44:55 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56007 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:44:56 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56008 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:45:02 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56009 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:45:13 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56011 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:45:14 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56013 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:45:22 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56015 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:45:30 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56016 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:45:31 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56017 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:45:50 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56018 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:46:10 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56023 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:46:31 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56121 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:46:53 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56182 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:47:16 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56205 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:47:40 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56222 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:48:05 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56233 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:48:31 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56283 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:48:58 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56291 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:49:26 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56343 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:49:55 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56344 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:50:25 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56356 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:50:56 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56390 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/06 17:51:28 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:56403 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+STATUS | wrapper  | 2019/09/11 11:02:49 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/11 11:02:49 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/11 11:02:51 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/11 11:02:51 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/11 11:02:51 | 
+INFO   | jvm 1    | 2019/09/11 11:02:51 | 
+INFO   | jvm 1    | 2019/09/11 11:02:51 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/11 11:02:51 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           Reported cause:
+INFO   | jvm 1    | 2019/09/11 11:02:51 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/11 11:02:51 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/11 11:02:51 | 
+INFO   | jvm 1    | 2019/09/11 11:02:51 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/11 11:02:51 |   Heap sizes: current=312320k  free=295934k  max=932352k
+INFO   | jvm 1    | 2019/09/11 11:02:51 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=h9CLL5N64zS1wcSy -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=14544 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/11 11:02:51 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/11 11:02:51 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/11 11:02:51 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/11 11:02:51 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/11 11:02:51 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/11 11:02:51 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/11 11:02:52 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/11 11:02:52 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@61a77358: startup date [Wed Sep 11 11:02:52 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-58077-1568224974576-0:1) is starting
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 11:02:54 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@6c8840f5{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-58077-1568224974576-0:1) started
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/11 11:02:55 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 92238 mb of usable space. - resetting to maximum available disk space: 92238 mb
+INFO   | jvm 1    | 2019/09/11 11:02:56 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/11 11:02:56 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/11 11:02:56 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/11 11:02:57 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/11 11:02:57 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/11 11:02:58 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/11 11:06:21 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:58293 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/11 11:06:26 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:58292 failed: java.io.IOException: Frame size of 1 GB larger than max allowed 100 MB
+INFO   | jvm 1    | 2019/09/11 11:06:41 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:58297 failed: java.io.EOFException
+INFO   | jvm 1    | 2019/09/11 11:06:41 |  WARN | Transport Connection to: tcp://0:0:0:0:0:0:0:1:58296 failed: java.io.EOFException
+STATUS | wrapper  | 2019/09/11 18:00:25 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/11 18:00:26 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/11 18:00:27 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/11 18:00:27 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/11 18:00:27 | 
+INFO   | jvm 1    | 2019/09/11 18:00:27 | 
+INFO   | jvm 1    | 2019/09/11 18:00:27 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/11 18:00:27 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           Reported cause:
+INFO   | jvm 1    | 2019/09/11 18:00:27 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/11 18:00:27 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/11 18:00:27 | 
+INFO   | jvm 1    | 2019/09/11 18:00:27 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/11 18:00:27 |   Heap sizes: current=312320k  free=294296k  max=932352k
+INFO   | jvm 1    | 2019/09/11 18:00:27 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=qxxAX2j0FZ3DWeDn -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=19704 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/11 18:00:27 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/11 18:00:27 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/11 18:00:27 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/11 18:00:27 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/11 18:00:27 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/11 18:00:27 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/11 18:00:28 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/11 18:00:28 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@3f5b9f99: startup date [Wed Sep 11 18:00:28 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/11 18:00:30 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/11 18:00:30 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/11 18:00:30 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/11 18:00:30 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/11 18:00:30 |  INFO | Recovering from the journal @1:8723
+INFO   | jvm 1    | 2019/09/11 18:00:30 |  INFO | Recovery replayed 6 operations from the journal in 0.041 seconds.
+INFO   | jvm 1    | 2019/09/11 18:00:30 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-53577-1568250030802-0:1) is starting
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@1ddba74c{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-53577-1568250030802-0:1) started
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/11 18:00:31 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 92308 mb of usable space. - resetting to maximum available disk space: 92308 mb
+INFO   | jvm 1    | 2019/09/11 18:00:32 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/11 18:00:33 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/11 18:00:33 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/11 18:00:33 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/11 18:00:33 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/11 18:00:35 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+STATUS | wrapper  | 2019/09/13 10:59:59 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/13 11:00:00 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/13 11:00:02 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/13 11:00:02 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/13 11:00:02 | 
+INFO   | jvm 1    | 2019/09/13 11:00:02 | 
+INFO   | jvm 1    | 2019/09/13 11:00:02 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/13 11:00:02 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           Reported cause:
+INFO   | jvm 1    | 2019/09/13 11:00:02 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/13 11:00:02 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/13 11:00:02 | 
+INFO   | jvm 1    | 2019/09/13 11:00:02 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/13 11:00:02 |   Heap sizes: current=312320k  free=295935k  max=932352k
+INFO   | jvm 1    | 2019/09/13 11:00:02 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=ZomjQ05YDkgyfrHQ -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=34632 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/13 11:00:02 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/13 11:00:02 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/13 11:00:02 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/13 11:00:02 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/13 11:00:02 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/13 11:00:02 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/13 11:00:03 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/13 11:00:03 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@61a77358: startup date [Fri Sep 13 11:00:03 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Recovering from the journal @1:10337
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Recovery replayed 1 operations from the journal in 0.045 seconds.
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-60349-1568397605599-0:1) is starting
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:00:05 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@25bf98b9{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-60349-1568397605599-0:1) started
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/13 11:00:06 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 94447 mb of usable space. - resetting to maximum available disk space: 94447 mb
+INFO   | jvm 1    | 2019/09/13 11:00:07 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/13 11:00:07 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/13 11:00:07 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/13 11:00:07 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/13 11:00:08 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/13 11:00:09 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/13 11:00:10 |  WARN | Transport Connection to: ws://127.0.0.1:60358 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:13 |  WARN | Transport Connection to: ws://127.0.0.1:60359 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:20 |  WARN | Transport Connection to: ws://127.0.0.1:60372 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:23 |  WARN | Transport Connection to: ws://127.0.0.1:60376 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:25 |  WARN | Transport Connection to: ws://127.0.0.1:60377 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:27 |  WARN | Transport Connection to: ws://127.0.0.1:60378 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:29 |  WARN | Transport Connection to: ws://127.0.0.1:60380 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:31 |  WARN | Transport Connection to: ws://127.0.0.1:60381 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:33 |  WARN | Transport Connection to: ws://127.0.0.1:60382 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:34 |  WARN | Transport Connection to: ws://127.0.0.1:60383 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:36 |  WARN | Transport Connection to: ws://127.0.0.1:60384 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:39 |  WARN | Transport Connection to: ws://127.0.0.1:60385 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:41 |  WARN | Transport Connection to: ws://127.0.0.1:60386 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:42 |  WARN | Transport Connection to: ws://127.0.0.1:60387 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:44 |  WARN | Transport Connection to: ws://127.0.0.1:60389 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:46 |  WARN | Transport Connection to: ws://127.0.0.1:60390 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:48 |  WARN | Transport Connection to: ws://127.0.0.1:60391 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:51 |  WARN | Transport Connection to: ws://127.0.0.1:60392 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:53 |  WARN | Transport Connection to: ws://127.0.0.1:60393 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:54 |  WARN | Transport Connection to: ws://127.0.0.1:60395 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:56 |  WARN | Transport Connection to: ws://127.0.0.1:60396 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:00:58 |  WARN | Transport Connection to: ws://127.0.0.1:60397 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:00 |  WARN | Transport Connection to: ws://127.0.0.1:60398 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:03 |  WARN | Transport Connection to: ws://127.0.0.1:60399 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:05 |  WARN | Transport Connection to: ws://127.0.0.1:60400 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:07 |  WARN | Transport Connection to: ws://127.0.0.1:60401 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:08 |  WARN | Transport Connection to: ws://127.0.0.1:60402 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:10 |  WARN | Transport Connection to: ws://127.0.0.1:60403 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:12 |  WARN | Transport Connection to: ws://127.0.0.1:60404 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:15 |  WARN | Transport Connection to: ws://127.0.0.1:60405 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:17 |  WARN | Transport Connection to: ws://127.0.0.1:60406 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:19 |  WARN | Transport Connection to: ws://127.0.0.1:60408 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:21 |  WARN | Transport Connection to: ws://127.0.0.1:60409 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:22 |  WARN | Transport Connection to: ws://127.0.0.1:60410 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:24 |  WARN | Transport Connection to: ws://127.0.0.1:60411 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:27 |  WARN | Transport Connection to: ws://127.0.0.1:60412 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:29 |  WARN | Transport Connection to: ws://127.0.0.1:60413 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:31 |  WARN | Transport Connection to: ws://127.0.0.1:60414 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:33 |  WARN | Transport Connection to: ws://127.0.0.1:60415 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:34 |  WARN | Transport Connection to: ws://127.0.0.1:60417 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:36 |  WARN | Transport Connection to: ws://127.0.0.1:60418 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:38 |  WARN | Transport Connection to: ws://127.0.0.1:60419 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:41 |  WARN | Transport Connection to: ws://127.0.0.1:60420 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:43 |  WARN | Transport Connection to: ws://127.0.0.1:60421 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:44 |  WARN | Transport Connection to: ws://127.0.0.1:60422 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:46 |  WARN | Transport Connection to: ws://127.0.0.1:60424 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:49 |  WARN | Transport Connection to: ws://127.0.0.1:60427 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:51 |  WARN | Transport Connection to: ws://127.0.0.1:60431 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:52 |  WARN | Transport Connection to: ws://127.0.0.1:60433 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:54 |  WARN | Transport Connection to: ws://127.0.0.1:60436 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:57 |  WARN | Transport Connection to: ws://127.0.0.1:60437 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:01:58 |  WARN | Transport Connection to: ws://127.0.0.1:60439 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:01 |  WARN | Transport Connection to: ws://127.0.0.1:60440 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:02 |  WARN | Transport Connection to: ws://127.0.0.1:60441 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:05 |  WARN | Transport Connection to: ws://127.0.0.1:60463 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:07 |  WARN | Transport Connection to: ws://127.0.0.1:60464 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:09 |  WARN | Transport Connection to: ws://127.0.0.1:60465 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:10 |  WARN | Transport Connection to: ws://127.0.0.1:60466 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:12 |  WARN | Transport Connection to: ws://127.0.0.1:60467 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:14 |  WARN | Transport Connection to: ws://127.0.0.1:60468 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:17 |  WARN | Transport Connection to: ws://127.0.0.1:60469 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:18 |  WARN | Transport Connection to: ws://127.0.0.1:60470 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:20 |  WARN | Transport Connection to: ws://127.0.0.1:60471 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:22 |  WARN | Transport Connection to: ws://127.0.0.1:60472 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:25 |  WARN | Transport Connection to: ws://127.0.0.1:60473 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:27 |  WARN | Transport Connection to: ws://127.0.0.1:60474 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:29 |  WARN | Transport Connection to: ws://127.0.0.1:60475 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:30 |  WARN | Transport Connection to: ws://127.0.0.1:60477 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:32 |  WARN | Transport Connection to: ws://127.0.0.1:60478 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:34 |  WARN | Transport Connection to: ws://127.0.0.1:60479 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:37 |  WARN | Transport Connection to: ws://127.0.0.1:60480 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:39 |  WARN | Transport Connection to: ws://127.0.0.1:60481 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:40 |  WARN | Transport Connection to: ws://127.0.0.1:60482 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:42 |  WARN | Transport Connection to: ws://127.0.0.1:60483 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:45 |  WARN | Transport Connection to: ws://127.0.0.1:60485 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:47 |  WARN | Transport Connection to: ws://127.0.0.1:60486 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:49 |  WARN | Transport Connection to: ws://127.0.0.1:60487 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:50 |  WARN | Transport Connection to: ws://127.0.0.1:60488 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:53 |  WARN | Transport Connection to: ws://127.0.0.1:60489 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:54 |  WARN | Transport Connection to: ws://127.0.0.1:60490 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:57 |  WARN | Transport Connection to: ws://127.0.0.1:60493 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:02:59 |  WARN | Transport Connection to: ws://127.0.0.1:60494 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:01 |  WARN | Transport Connection to: ws://127.0.0.1:60495 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:02 |  WARN | Transport Connection to: ws://127.0.0.1:60496 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:05 |  WARN | Transport Connection to: ws://127.0.0.1:60500 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:06 |  WARN | Transport Connection to: ws://127.0.0.1:60501 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:09 |  WARN | Transport Connection to: ws://127.0.0.1:60502 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:11 |  WARN | Transport Connection to: ws://127.0.0.1:60503 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:12 |  WARN | Transport Connection to: ws://127.0.0.1:60504 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:15 |  WARN | Transport Connection to: ws://127.0.0.1:60505 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:17 |  WARN | Transport Connection to: ws://127.0.0.1:60506 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:18 |  WARN | Transport Connection to: ws://127.0.0.1:60507 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:20 |  WARN | Transport Connection to: ws://127.0.0.1:60508 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:22 |  WARN | Transport Connection to: ws://127.0.0.1:60509 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:24 |  WARN | Transport Connection to: ws://127.0.0.1:60510 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:27 |  WARN | Transport Connection to: ws://127.0.0.1:60511 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:29 |  WARN | Transport Connection to: ws://127.0.0.1:60512 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:31 |  WARN | Transport Connection to: ws://127.0.0.1:60513 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:32 |  WARN | Transport Connection to: ws://127.0.0.1:60514 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:34 |  WARN | Transport Connection to: ws://127.0.0.1:60515 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:36 |  WARN | Transport Connection to: ws://127.0.0.1:60518 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:39 |  WARN | Transport Connection to: ws://127.0.0.1:60522 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:41 |  WARN | Transport Connection to: ws://127.0.0.1:60525 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:43 |  WARN | Transport Connection to: ws://127.0.0.1:60531 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:44 |  WARN | Transport Connection to: ws://127.0.0.1:60532 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:46 |  WARN | Transport Connection to: ws://127.0.0.1:60533 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:49 |  WARN | Transport Connection to: ws://127.0.0.1:60534 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:54 |  WARN | Transport Connection to: ws://127.0.0.1:60535 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:54 |  WARN | Transport Connection to: ws://127.0.0.1:60536 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:55 |  WARN | Transport Connection to: ws://127.0.0.1:60538 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:57 |  WARN | Transport Connection to: ws://127.0.0.1:60539 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:03:58 |  WARN | Transport Connection to: ws://127.0.0.1:60540 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:00 |  WARN | Transport Connection to: ws://127.0.0.1:60542 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:03 |  WARN | Transport Connection to: ws://127.0.0.1:60544 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:05 |  WARN | Transport Connection to: ws://127.0.0.1:60565 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:07 |  WARN | Transport Connection to: ws://127.0.0.1:60567 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:08 |  WARN | Transport Connection to: ws://127.0.0.1:60568 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:10 |  WARN | Transport Connection to: ws://127.0.0.1:60569 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:13 |  WARN | Transport Connection to: ws://127.0.0.1:60571 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:15 |  WARN | Transport Connection to: ws://127.0.0.1:60572 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:17 |  WARN | Transport Connection to: ws://127.0.0.1:60573 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:18 |  WARN | Transport Connection to: ws://127.0.0.1:60574 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:20 |  WARN | Transport Connection to: ws://127.0.0.1:60575 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:22 |  WARN | Transport Connection to: ws://127.0.0.1:60576 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:25 |  WARN | Transport Connection to: ws://127.0.0.1:60577 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:27 |  WARN | Transport Connection to: ws://127.0.0.1:60578 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:28 |  WARN | Transport Connection to: ws://127.0.0.1:60579 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:30 |  WARN | Transport Connection to: ws://127.0.0.1:60583 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:33 |  WARN | Transport Connection to: ws://127.0.0.1:60585 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:34 |  WARN | Transport Connection to: ws://127.0.0.1:60586 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:36 |  WARN | Transport Connection to: ws://127.0.0.1:60588 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:39 |  WARN | Transport Connection to: ws://127.0.0.1:60591 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:41 |  WARN | Transport Connection to: ws://127.0.0.1:60599 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:43 |  WARN | Transport Connection to: ws://127.0.0.1:60609 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:44 |  WARN | Transport Connection to: ws://127.0.0.1:60619 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:47 |  WARN | Transport Connection to: ws://127.0.0.1:60627 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:49 |  WARN | Transport Connection to: ws://127.0.0.1:60628 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:51 |  WARN | Transport Connection to: ws://127.0.0.1:60629 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:53 |  WARN | Transport Connection to: ws://127.0.0.1:60631 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:54 |  WARN | Transport Connection to: ws://127.0.0.1:60632 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:56 |  WARN | Transport Connection to: ws://127.0.0.1:60633 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:04:58 |  WARN | Transport Connection to: ws://127.0.0.1:60634 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:05:00 |  WARN | Transport Connection to: ws://127.0.0.1:60635 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+INFO   | jvm 1    | 2019/09/13 11:05:03 |  WARN | Transport Connection to: ws://127.0.0.1:60636 failed: java.io.IOException: Invalid destination name: a non-empty name is required
+STATUS | wrapper  | 2019/09/13 11:25:25 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/13 11:25:26 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/13 11:25:27 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/13 11:25:27 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/13 11:25:27 | 
+INFO   | jvm 1    | 2019/09/13 11:25:27 | 
+INFO   | jvm 1    | 2019/09/13 11:25:27 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/13 11:25:27 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           Reported cause:
+INFO   | jvm 1    | 2019/09/13 11:25:27 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/13 11:25:27 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/13 11:25:27 | 
+INFO   | jvm 1    | 2019/09/13 11:25:27 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/13 11:25:27 |   Heap sizes: current=312320k  free=295935k  max=932352k
+INFO   | jvm 1    | 2019/09/13 11:25:27 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=TsCRsXkDGkBPCLra -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=32428 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/13 11:25:27 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/13 11:25:27 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/13 11:25:27 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/13 11:25:27 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/13 11:25:27 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/13 11:25:27 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/13 11:25:27 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/13 11:25:27 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@6475bf8c: startup date [Fri Sep 13 11:25:27 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/13 11:25:28 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Recovering from the journal @1:11523
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Recovery replayed 3 operations from the journal in 0.023 seconds.
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-61417-1568399129088-0:1) is starting
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@37ea61e9{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-61417-1568399129088-0:1) started
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/13 11:25:29 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 94453 mb of usable space. - resetting to maximum available disk space: 94453 mb
+INFO   | jvm 1    | 2019/09/13 11:25:30 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/13 11:25:30 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/13 11:25:30 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/13 11:25:30 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/13 11:25:31 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/13 11:25:32 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/13 11:41:01 |  WARN | 
+INFO   | wrapper  | 2019/09/13 11:58:19 | Wrapper Process has not received any CPU time for 1017 seconds.  Extending timeouts.
+INFO   | jvm 1    | 2019/09/13 11:58:19 | org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalArgumentException: No JMSDestination parameter specified
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)[tomcat-servlet-api-8.0.53.jar:]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)[tomcat-servlet-api-8.0.53.jar:]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:812)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)[activemq-web-5.15.9.jar:5.15.9]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)[file:/C:/Users/Chen/Downloads/apache-activemq-5.15.9/webapps/admin/WEB-INF/classes/:]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:542)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:542)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.Server.handle(Server.java:499)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:311)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:258)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:544)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)[jetty-all-9.2.26.v20180806.jar:9.2.26.v20180806]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | 	at java.lang.Thread.run(Unknown Source)[:1.8.0_181]
+INFO   | jvm 1    | 2019/09/13 11:58:19 | Wrapper Manager: The Wrapper code did not ping the JVM for 59 seconds.  Quit and let the Wrapper resynch.
+INFO   | jvm 1    | 2019/09/13 11:58:19 |  INFO | Waited 2.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@d6bc2d2[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2019/09/13 11:58:19 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@d6bc2d2[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due first await termination elapsed.
+INFO   | jvm 1    | 2019/09/13 11:58:19 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@d6bc2d2[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due interrupted.
+INFO   | jvm 1    | 2019/09/13 11:58:19 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@d6bc2d2[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] is shutdown: true and terminated: false took: 5 minutes.
+INFO   | jvm 1    | 2019/09/13 11:58:19 |  WARN | Transport Connection to: tcp://127.0.0.1:62775 failed: java.net.SocketException: Software caused connection abort: recv failed
+INFO   | jvm 1    | 2019/09/13 11:58:19 |  WARN | Transport Connection to: tcp://127.0.0.1:62691 failed: java.net.SocketException: Software caused connection abort: recv failed
+INFO   | jvm 1    | 2019/09/13 11:58:19 |  WARN | Transport Connection to: tcp://127.0.0.1:62747 failed: java.net.SocketException: Software caused connection abort: recv failed
+STATUS | wrapper  | 2019/09/13 11:58:19 | JVM requested a restart.
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-61417-1568399129088-0:1) is shutting down
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Connector openwire stopped
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Connector amqp stopped
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Connector stomp stopped
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Connector mqtt stopped
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Connector ws stopped
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] stopped
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Stopping async queue tasks
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Stopping async topic tasks
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Stopped KahaDB
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-61417-1568399129088-0:1) uptime 32 minutes
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-61417-1568399129088-0:1) is shutdown
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@6475bf8c: startup date [Fri Sep 13 11:25:27 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/13 11:58:21 |  INFO | Destroying Spring FrameworkServlet 'dispatcher'
+STATUS | wrapper  | 2019/09/13 11:58:25 | Launching a JVM...
+INFO   | jvm 2    | 2019/09/13 11:58:27 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 2    | 2019/09/13 11:58:27 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 2    | 2019/09/13 11:58:27 | 
+INFO   | jvm 2    | 2019/09/13 11:58:27 | 
+INFO   | jvm 2    | 2019/09/13 11:58:27 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           The file is located on the path at the following location but
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           could not be loaded:
+INFO   | jvm 2    | 2019/09/13 11:58:27 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           Please verify that the file is readable by the current user
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           and that the file has not been corrupted in any way.
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           This is a 64-bit JVM.
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           Reported cause:
+INFO   | jvm 2    | 2019/09/13 11:58:27 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 2    | 2019/09/13 11:58:27 |           System signals will not be handled correctly.
+INFO   | jvm 2    | 2019/09/13 11:58:27 | 
+INFO   | jvm 2    | 2019/09/13 11:58:27 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 2    | 2019/09/13 11:58:27 |   Heap sizes: current=312320k  free=295935k  max=932352k
+INFO   | jvm 2    | 2019/09/13 11:58:27 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=diju9QsRpjVPHECW -Dwrapper.port=32002 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=32428 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=2
+INFO   | jvm 2    | 2019/09/13 11:58:27 | Extensions classpath:
+INFO   | jvm 2    | 2019/09/13 11:58:27 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 2    | 2019/09/13 11:58:27 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 2    | 2019/09/13 11:58:27 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 2    | 2019/09/13 11:58:27 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 2    | 2019/09/13 11:58:27 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 2    | 2019/09/13 11:58:27 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 2    | 2019/09/13 11:58:27 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@2e90984a: startup date [Fri Sep 13 11:58:27 PDT 2019]; root of context hierarchy
+INFO   | jvm 2    | 2019/09/13 11:58:29 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 2    | 2019/09/13 11:58:29 |  INFO | KahaDB is version 6
+INFO   | jvm 2    | 2019/09/13 11:58:29 |  INFO | Recovering from the journal @1:13716
+INFO   | jvm 2    | 2019/09/13 11:58:29 |  INFO | Recovery replayed 13 operations from the journal in 0.033 seconds.
+INFO   | jvm 2    | 2019/09/13 11:58:29 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-62909-1568401109991-0:1) is starting
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Connector openwire started
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Connector amqp started
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Connector stomp started
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Connector mqtt started
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Starting Jetty server
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Creating Jetty connector
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@6c922754{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Connector ws started
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-62909-1568401109991-0:1) started
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 2    | 2019/09/13 11:58:30 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 94356 mb of usable space. - resetting to maximum available disk space: 94356 mb
+INFO   | jvm 2    | 2019/09/13 11:58:32 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 2    | 2019/09/13 11:58:32 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 2    | 2019/09/13 11:58:32 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 2    | 2019/09/13 11:58:33 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 2    | 2019/09/13 11:58:33 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 2    | 2019/09/13 11:58:35 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 2    | 2019/09/13 12:00:16 |  INFO | Waited 2.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:00:18 |  INFO | Waited 4.008 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:00:20 |  INFO | Waited 6.029 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:00:22 |  INFO | Waited 8.032 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:00:24 |  INFO | Waited 10.010 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:00:24 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] due first await termination elapsed.
+INFO   | jvm 2    | 2019/09/13 12:00:24 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] due interrupted.
+INFO   | jvm 2    | 2019/09/13 12:00:24 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@e46dce6[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] is shutdown: true and terminated: false took: 10.028 seconds.
+INFO   | jvm 2    | 2019/09/13 12:00:24 |  WARN | Transport Connection to: ws://127.0.0.1:62948 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive for too (>10000) long: ws://127.0.0.1:62948
+INFO   | jvm 2    | 2019/09/13 12:01:18 |  INFO | Waited 2.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:01:20 |  INFO | Waited 4.021 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:01:22 |  INFO | Waited 6.040 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:01:24 |  INFO | Waited 8.051 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:01:26 |  INFO | Waited 10.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 2    | 2019/09/13 12:01:26 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due first await termination elapsed.
+INFO   | jvm 2    | 2019/09/13 12:01:26 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due interrupted.
+INFO   | jvm 2    | 2019/09/13 12:01:26 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@347aee03[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] is shutdown: true and terminated: false took: 10.021 seconds.
+INFO   | jvm 2    | 2019/09/13 12:01:26 |  WARN | Transport Connection to: ws://127.0.0.1:63014 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive for too (>10000) long: ws://127.0.0.1:63014
+STATUS | wrapper  | 2019/09/16 10:17:06 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/16 10:17:07 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/16 10:17:09 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/16 10:17:09 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/16 10:17:09 | 
+INFO   | jvm 1    | 2019/09/16 10:17:09 | 
+INFO   | jvm 1    | 2019/09/16 10:17:09 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/16 10:17:09 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           Reported cause:
+INFO   | jvm 1    | 2019/09/16 10:17:09 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/16 10:17:09 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/16 10:17:09 | 
+INFO   | jvm 1    | 2019/09/16 10:17:09 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/16 10:17:09 |   Heap sizes: current=312320k  free=294295k  max=932352k
+INFO   | jvm 1    | 2019/09/16 10:17:09 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=H0TWU3JJME14tP_5 -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=29484 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/16 10:17:09 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/16 10:17:09 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/16 10:17:09 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/16 10:17:09 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/16 10:17:09 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/16 10:17:09 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/16 10:17:09 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/16 10:17:09 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@6475bf8c: startup date [Mon Sep 16 10:17:09 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/16 10:17:11 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Recovering from the journal @1:16064
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Recovery replayed 5 operations from the journal in 0.031 seconds.
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-56578-1568654232183-0:1) is starting
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@781a95e9{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-56578-1568654232183-0:1) started
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/16 10:17:12 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 93799 mb of usable space. - resetting to maximum available disk space: 93799 mb
+INFO   | jvm 1    | 2019/09/16 10:17:14 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/16 10:17:14 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/16 10:17:14 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/16 10:17:15 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/16 10:17:15 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/16 10:17:16 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+STATUS | wrapper  | 2019/09/19 09:15:11 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/19 09:15:11 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/19 09:15:14 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/19 09:15:14 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/19 09:15:14 | 
+INFO   | jvm 1    | 2019/09/19 09:15:14 | 
+INFO   | jvm 1    | 2019/09/19 09:15:14 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/19 09:15:14 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           Reported cause:
+INFO   | jvm 1    | 2019/09/19 09:15:14 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/19 09:15:14 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/19 09:15:14 | 
+INFO   | jvm 1    | 2019/09/19 09:15:14 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/19 09:15:14 |   Heap sizes: current=312320k  free=295935k  max=932352k
+INFO   | jvm 1    | 2019/09/19 09:15:14 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=YWyYM6DOzevV88C3 -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=23028 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/19 09:15:14 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/19 09:15:14 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/19 09:15:14 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/19 09:15:14 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/19 09:15:14 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/19 09:15:14 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/19 09:15:14 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/19 09:15:15 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@6475bf8c: startup date [Thu Sep 19 09:15:14 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/19 09:15:16 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/19 09:15:16 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/19 09:15:16 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/19 09:15:16 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/19 09:15:16 |  INFO | Recovering from the journal @1:17728
+INFO   | jvm 1    | 2019/09/19 09:15:16 |  INFO | Recovery replayed 17 operations from the journal in 0.035 seconds.
+INFO   | jvm 1    | 2019/09/19 09:15:16 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/19 09:15:17 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-58011-1568909716830-0:1) is starting
+INFO   | jvm 1    | 2019/09/19 09:15:17 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 09:15:17 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/19 09:15:18 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/19 09:15:19 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@1d8a09be{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/19 09:15:19 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 09:15:19 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/19 09:15:19 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-58011-1568909716830-0:1) started
+INFO   | jvm 1    | 2019/09/19 09:15:19 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/19 09:15:19 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 93299 mb of usable space. - resetting to maximum available disk space: 93299 mb
+INFO   | jvm 1    | 2019/09/19 09:15:21 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 09:15:21 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/19 09:15:21 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/19 09:15:21 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/19 09:15:21 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 09:15:23 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+STATUS | wrapper  | 2019/09/19 10:03:17 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/19 10:03:17 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/19 10:03:19 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/19 10:03:19 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/19 10:03:19 | 
+INFO   | jvm 1    | 2019/09/19 10:03:19 | 
+INFO   | jvm 1    | 2019/09/19 10:03:19 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/19 10:03:19 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           Reported cause:
+INFO   | jvm 1    | 2019/09/19 10:03:19 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/19 10:03:19 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/19 10:03:19 | 
+INFO   | jvm 1    | 2019/09/19 10:03:19 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/19 10:03:19 |   Heap sizes: current=312320k  free=294296k  max=932352k
+INFO   | jvm 1    | 2019/09/19 10:03:19 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=VINSaz2BHde_fwVF -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=34952 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/19 10:03:19 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/19 10:03:19 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/19 10:03:19 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/19 10:03:19 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/19 10:03:19 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/19 10:03:19 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/19 10:03:19 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/19 10:03:19 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@61a77358: startup date [Thu Sep 19 10:03:19 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/19 10:03:21 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/19 10:03:21 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/19 10:03:21 |  INFO | Recovering from the journal @1:20417
+INFO   | jvm 1    | 2019/09/19 10:03:21 |  INFO | Recovery replayed 4 operations from the journal in 0.028 seconds.
+INFO   | jvm 1    | 2019/09/19 10:03:21 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/19 10:03:21 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-61543-1568912601691-0:1) is starting
+INFO   | jvm 1    | 2019/09/19 10:03:22 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 10:03:22 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/19 10:03:22 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 10:03:22 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/19 10:03:23 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 10:03:23 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/19 10:03:23 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 10:03:23 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/19 10:03:23 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/19 10:03:23 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/19 10:03:23 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@a84e2ed{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/19 10:03:24 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 10:03:24 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/19 10:03:24 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-61543-1568912601691-0:1) started
+INFO   | jvm 1    | 2019/09/19 10:03:24 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/19 10:03:24 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 91090 mb of usable space. - resetting to maximum available disk space: 91090 mb
+INFO   | jvm 1    | 2019/09/19 10:03:25 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 10:03:26 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/19 10:03:26 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/19 10:03:26 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/19 10:03:26 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 10:03:27 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+INFO   | jvm 1    | 2019/09/19 11:30:28 |  INFO | Waited 2.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2019/09/19 11:30:30 |  INFO | Waited 4.016 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2019/09/19 11:30:32 |  INFO | Waited 6.020 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2019/09/19 11:30:34 |  INFO | Waited 8.024 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2019/09/19 11:30:36 |  INFO | Waited 10.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] to terminate...
+INFO   | jvm 1    | 2019/09/19 11:30:36 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due first await termination elapsed.
+INFO   | jvm 1    | 2019/09/19 11:30:36 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] due interrupted.
+INFO   | jvm 1    | 2019/09/19 11:30:36 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@43253e16[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 3] is shutdown: true and terminated: false took: 10.009 seconds.
+INFO   | jvm 1    | 2019/09/19 12:53:30 |  INFO | Waited 2.002 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 1    | 2019/09/19 12:53:32 |  INFO | Waited 4.014 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 1    | 2019/09/19 12:53:34 |  INFO | Waited 6.017 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 1    | 2019/09/19 12:53:36 |  INFO | Waited 8.021 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 1    | 2019/09/19 12:53:38 |  INFO | Waited 10.001 seconds for ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] to terminate...
+INFO   | jvm 1    | 2019/09/19 12:53:38 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] due first await termination elapsed.
+INFO   | jvm 1    | 2019/09/19 12:53:38 |  WARN | Forcing shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] due interrupted.
+INFO   | jvm 1    | 2019/09/19 12:53:38 |  INFO | Shutdown of ExecutorService: java.util.concurrent.ThreadPoolExecutor@201a609c[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 5] is shutdown: true and terminated: false took: 10.008 seconds.
+INFO   | jvm 1    | 2019/09/19 12:53:38 |  WARN | Transport Connection to: ws://127.0.0.1:54457 failed: org.apache.activemq.transport.InactivityIOException: Channel was inactive for too (>10000) long: ws://127.0.0.1:54457
+STATUS | wrapper  | 2019/09/19 17:48:59 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/19 17:49:00 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/19 17:49:02 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/19 17:49:02 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/19 17:49:02 | 
+INFO   | jvm 1    | 2019/09/19 17:49:02 | 
+INFO   | jvm 1    | 2019/09/19 17:49:02 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/19 17:49:02 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           Reported cause:
+INFO   | jvm 1    | 2019/09/19 17:49:02 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/19 17:49:02 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/19 17:49:02 | 
+INFO   | jvm 1    | 2019/09/19 17:49:02 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/19 17:49:02 |   Heap sizes: current=312320k  free=294284k  max=932352k
+INFO   | jvm 1    | 2019/09/19 17:49:02 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=2SWBMZZkqD9GNXZ4 -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=5796 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/19 17:49:02 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/19 17:49:02 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/19 17:49:02 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/19 17:49:02 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/19 17:49:02 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/19 17:49:02 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/19 17:49:02 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/19 17:49:02 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@6475bf8c: startup date [Thu Sep 19 17:49:02 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovering pageFile free list due to prior unclean shutdown..
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | Page File: ..\..\data\kahadb\db.data. Recovered pageFile free list of size: 0
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | KahaDB is version 6
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | Recovering from the journal @1:21991
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | Recovery replayed 11 operations from the journal in 0.036 seconds.
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/19 17:49:04 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-64572-1568940544696-0:1) is starting
+INFO   | jvm 1    | 2019/09/19 17:49:05 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:49:05 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/19 17:49:06 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:49:06 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/19 17:49:07 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:49:07 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/19 17:49:07 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:49:07 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/19 17:49:07 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/19 17:49:07 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/19 17:49:08 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@75f788df{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/19 17:49:09 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:49:09 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/19 17:49:09 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-64572-1568940544696-0:1) started
+INFO   | jvm 1    | 2019/09/19 17:49:09 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/19 17:49:09 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 87611 mb of usable space. - resetting to maximum available disk space: 87611 mb
+INFO   | jvm 1    | 2019/09/19 17:49:10 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 17:49:10 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/19 17:49:10 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/19 17:49:11 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/19 17:49:12 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 17:49:14 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml
+STATUS | wrapper  | 2019/09/19 17:51:11 | --> Wrapper Started as Console
+STATUS | wrapper  | 2019/09/19 17:51:11 | Launching a JVM...
+INFO   | jvm 1    | 2019/09/19 17:51:13 | Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+INFO   | jvm 1    | 2019/09/19 17:51:13 |   Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+INFO   | jvm 1    | 2019/09/19 17:51:13 | 
+INFO   | jvm 1    | 2019/09/19 17:51:13 | 
+INFO   | jvm 1    | 2019/09/19 17:51:13 | WARNING - Unable to load the Wrapper's native library 'wrapper.dll'.
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           The file is located on the path at the following location but
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           could not be loaded:
+INFO   | jvm 1    | 2019/09/19 17:51:13 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\bin\win32\wrapper.dll
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           Please verify that the file is readable by the current user
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           and that the file has not been corrupted in any way.
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           One common cause of this problem is running a 32-bit version
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           of the Wrapper with a 64-bit version of Java, or vica versa.
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           This is a 64-bit JVM.
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           Reported cause:
+INFO   | jvm 1    | 2019/09/19 17:51:13 |             C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\wrapper.dll: Can't load IA 32-bit .dll on a AMD 64-bit platform
+INFO   | jvm 1    | 2019/09/19 17:51:13 |           System signals will not be handled correctly.
+INFO   | jvm 1    | 2019/09/19 17:51:13 | 
+INFO   | jvm 1    | 2019/09/19 17:51:13 | Java Runtime: Oracle Corporation 1.8.0_181 C:\Program Files\Java\jre1.8.0_181
+INFO   | jvm 1    | 2019/09/19 17:51:13 |   Heap sizes: current=312320k  free=294284k  max=932352k
+INFO   | jvm 1    | 2019/09/19 17:51:13 |     JVM args: -Dactivemq.home=../.. -Dactivemq.base=../.. -Djavax.net.ssl.keyStorePassword=password -Djavax.net.ssl.trustStorePassword=password -Djavax.net.ssl.keyStore=../../conf/broker.ks -Djavax.net.ssl.trustStore=../../conf/broker.ts -Dcom.sun.management.jmxremote -Dorg.apache.activemq.UseDedicatedTaskRunner=true -Djava.util.logging.config.file=logging.properties -Dactivemq.conf=../../conf -Dactivemq.data=../../data -Djava.security.auth.login.config=../../conf/login.config -Xmx1024m -Djava.library.path=../../bin/win32 -Dwrapper.key=fxfEqS_mOQlyJrZz -Dwrapper.port=32001 -Dwrapper.jvm.port.min=31000 -Dwrapper.jvm.port.max=31999 -Dwrapper.pid=21500 -Dwrapper.version=3.2.3 -Dwrapper.native_library=wrapper -Dwrapper.cpu.timeout=10 -Dwrapper.jvmid=1
+INFO   | jvm 1    | 2019/09/19 17:51:13 | Extensions classpath:
+INFO   | jvm 1    | 2019/09/19 17:51:13 |   [..\..\lib,..\..\lib\camel,..\..\lib\optional,..\..\lib\web,..\..\lib\extra]
+INFO   | jvm 1    | 2019/09/19 17:51:13 | ACTIVEMQ_HOME: ..\..
+INFO   | jvm 1    | 2019/09/19 17:51:13 | ACTIVEMQ_BASE: ..\..
+INFO   | jvm 1    | 2019/09/19 17:51:13 | ACTIVEMQ_CONF: ..\..\conf
+INFO   | jvm 1    | 2019/09/19 17:51:13 | ACTIVEMQ_DATA: ..\..\data
+INFO   | jvm 1    | 2019/09/19 17:51:14 | Loading message broker from: xbean:activemq.xml
+INFO   | jvm 1    | 2019/09/19 17:51:14 |  INFO | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@1d82fc28: startup date [Thu Sep 19 17:51:14 PDT 2019]; root of context hierarchy
+INFO   | jvm 1    | 2019/09/19 17:51:16 |  INFO | Using Persistence Adapter: KahaDBPersistenceAdapter[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb]
+INFO   | jvm 1    | 2019/09/19 17:51:16 |  INFO | PListStore:[C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\localhost\tmp_storage] started
+INFO   | jvm 1    | 2019/09/19 17:51:17 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-64786-1568940677155-0:1) is starting
+INFO   | jvm 1    | 2019/09/19 17:51:18 |  INFO | Listening for connections at: tcp://LAPTOP-36L71KIJ:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:51:18 |  INFO | Connector openwire started
+INFO   | jvm 1    | 2019/09/19 17:51:19 |  INFO | Listening for connections at: amqp://LAPTOP-36L71KIJ:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:51:19 |  INFO | Connector amqp started
+INFO   | jvm 1    | 2019/09/19 17:51:20 |  INFO | Listening for connections at: stomp://LAPTOP-36L71KIJ:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:51:20 |  INFO | Connector stomp started
+INFO   | jvm 1    | 2019/09/19 17:51:21 |  INFO | Listening for connections at: mqtt://LAPTOP-36L71KIJ:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:51:21 |  INFO | Connector mqtt started
+INFO   | jvm 1    | 2019/09/19 17:51:21 |  INFO | Starting Jetty server
+INFO   | jvm 1    | 2019/09/19 17:51:21 |  INFO | Creating Jetty connector
+INFO   | jvm 1    | 2019/09/19 17:51:21 |  WARN | ServletContext@o.e.j.s.ServletContextHandler@76895256{/,null,STARTING} has uncovered http methods for path: /
+INFO   | jvm 1    | 2019/09/19 17:51:22 |  INFO | Listening for connections at ws://LAPTOP-36L71KIJ:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600
+INFO   | jvm 1    | 2019/09/19 17:51:22 |  INFO | Connector ws started
+INFO   | jvm 1    | 2019/09/19 17:51:22 |  INFO | Apache ActiveMQ 5.15.9 (localhost, ID:LAPTOP-36L71KIJ-64786-1568940677155-0:1) started
+INFO   | jvm 1    | 2019/09/19 17:51:22 |  INFO | For help or more information please see: http://activemq.apache.org
+INFO   | jvm 1    | 2019/09/19 17:51:22 |  WARN | Store limit is 102400 mb (current store usage is 0 mb). The data directory: C:\Users\Chen\Downloads\apache-activemq-5.15.9\bin\win32\..\..\data\kahadb only has 87577 mb of usable space. - resetting to maximum available disk space: 87577 mb
+INFO   | jvm 1    | 2019/09/19 17:51:23 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 17:51:24 |  INFO | ActiveMQ WebConsole available at http://0.0.0.0:8161/
+INFO   | jvm 1    | 2019/09/19 17:51:24 |  INFO | ActiveMQ Jolokia REST API available at http://0.0.0.0:8161/api/jolokia/
+INFO   | jvm 1    | 2019/09/19 17:51:25 |  INFO | Initializing Spring FrameworkServlet 'dispatcher'
+INFO   | jvm 1    | 2019/09/19 17:51:25 |  INFO | No Spring WebApplicationInitializer types detected on classpath
+INFO   | jvm 1    | 2019/09/19 17:51:27 |  INFO | jolokia-agent: Using policy access restrictor classpath:/jolokia-access.xml

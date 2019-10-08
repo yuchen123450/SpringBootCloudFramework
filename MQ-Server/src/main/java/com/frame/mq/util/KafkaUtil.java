@@ -7,6 +7,7 @@ import java.util.Map;
 import org.apache.kafka.clients.admin.AdminClient;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.connect.data.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -24,6 +25,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
 
+import com.frame.manager.base.vo.GeneralResVO;
 import com.frame.message.vo.KafkaMessageVO;
 import com.frame.message.vo.SimpleMessageVO;
 import com.frame.mq.property.TopicProperties;
@@ -63,13 +65,21 @@ public class KafkaUtil {
 	 * @param data
 	 * @author: Chen
 	 * @time：    Oct 3, 2019
+	 * @throws IllegalAccessException 
+	 * @throws InstantiationException 
 	 * @description: A
 	 */
-	public void asyncSendToKafka(final KafkaMessageVO data) {
-	    final ProducerRecord<String, String> record = createRecord(data);
-	    ListenableFuture<SendResult<String, String>> future = template.send(record);
-	    
-	    future.addCallback(callback());
+	@SuppressWarnings("rawtypes")
+	public GeneralResVO asyncSendToKafka(final KafkaMessageVO data) throws InstantiationException, IllegalAccessException {
+	    try {
+	    	final ProducerRecord<String, String> record = createRecord(data);
+		    ListenableFuture<SendResult<String, String>> future = template.send(record);
+		    
+		    future.addCallback(callback());
+		    return GeneralResVO.returnSuccessResult(new Date().toString());
+	    } catch (Exception e) {
+			return GeneralResVO.returnErrorResult(null);
+		}
 	    
 	}
 
