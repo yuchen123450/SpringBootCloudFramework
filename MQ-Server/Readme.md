@@ -5,4 +5,4 @@ Including:
 	RabbitMQ
 
 Description:
-	They are currently widely used in software development. All of them can be configured to create embeded broker or producer/consumer depending on External broker.
+	They are currently widely used in software development. All of them can be configured to depend on embeded broker or on External broker.
