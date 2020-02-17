@@ -56,7 +56,7 @@ public class FileServiceImpl implements FileService {
 	@Override
 	public GeneralResVO fileDecompression(HttpServletRequest request)
 			throws InstantiationException, IllegalAccessException {
-		 String filename=fileSavePath+"test.rar";
+		  String filename=fileSavePath+"test.rar";
 		  File f=new File(filename);
 		  Archive a=null;
 		  try {
